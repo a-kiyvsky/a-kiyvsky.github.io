@@ -28,6 +28,16 @@ $(function() {
             }, 250 * n+1)
         });
     }
+    if (scroll >= 1670) {
+        //clearHeader, not clearheader - caps H
+        $('.select').find('.select-element').each(function(n) {
+            var i = n;
+            var $this = $(this);
+            var t = setTimeout(function(){
+                $this.addClass('li_left')
+            }, 250 * n+1)
+        });
+    }
 }); //missing );
 	$('#nav-icon1').click(function(){
 		$('nav').toggleClass('open');
