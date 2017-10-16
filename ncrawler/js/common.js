@@ -38,6 +38,23 @@ $(function() {
             }, 250 * n+1)
         });
     }
+    if (scroll >= 2040) {
+        //clearHeader, not clearheader - caps H
+        $('.benefit').find('.benefit-element').each(function(n) {
+            var i = n;
+            var $this = $(this);
+            var t = setTimeout(function(){
+                $this.addClass('li_left')
+            }, 250 * n+1)
+        });
+        $('.benefit').find('.benefit-element__vs').each(function(n) {
+            var i = n;
+            var $this = $(this);
+            var t = setTimeout(function(){
+                $this.addClass('li_left')
+            }, 350 * n+1)
+        });
+    }
 }); //missing );
 	$('#nav-icon1').click(function(){
 		$('nav').toggleClass('open');
