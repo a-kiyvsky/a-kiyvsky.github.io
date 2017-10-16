@@ -1,0 +1,191 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+@media only screen and (max-width : 480px)
+  #nav-icon1
+    top: 10px
+    z-index: 9999999
+    position: absolute
+    display: inline-block
+  .main
+    max-height: none
+    height: auto
+    padding-bottom: 45px
+    .row:first-child
+      display: block
+    .bullets
+      .bullets-element
+        width: 100%
+        h2
+    .table
+      .header
+        margin-bottom: 0
+        &-element
+          width: auto
+          margin-right: 33px !important
+          &:first-child
+            display: none
+          &:last-child
+            margin-left: 0
+          &.icon
+            &::before
+              display: none
+            &::after
+              display: none
+      .table-body
+        &__name
+          margin-left: 0
+        &__your
+          margin-right: 5px
+          &::after
+            content: ''
+            width: 1px
+            height: 10px
+            background-color: #fff
+            position: relative
+            display: inline-block
+            margin-left: 10px
+        &__other
+          padding-right: 35px
+          margin-right: 0
+  .promo
+    .gallery
+      &-wrapper
+        &__element
+          width: 100%
+          display: block
+          margin: 20px auto
+          &.active
+            .gallery-wrapper__image
+              width: 100%
+              left: 0
+          &::after
+            display: none
+          &::before
+            display: none
+          &:hover
+            .gallery-wrapper__image
+              width: 100%
+            &:last-child
+              .gallery-wrapper__image
+                right: 0
+        &__image
+          .open
+            top: 50%
+            opacity: 1
+        &__text
+          opacity: 1
+  .videos
+    &-element
+      margin-bottom: 45px
+  .select
+    .headline
+      h2
+        font-size: 25px
+    &-element
+      width: 80%
+      margin: 25px auto
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	header
+    position: fixed
+    width: 100%
+    .logo
+      width: 100%
+      overflow: hidden
+      a
+        width: 100%
+        overflow: hidden
+        img
+          width: 100%
+    .info-wrapper
+      .phone
+        font-size: 24px
+        line-height: 24px
+      .email
+        padding-right: 3px
+    nav
+      opacity: 0
+      top: -200px
+      transition: all 0.5s
+      display: block
+      position: absolute
+      width: 89%
+      background: #fff
+      border-radius: 3px
+      padding: 10px
+      margin-top: 0
+      box-sizing: border-box
+      z-index: 99999999
+      &.open
+        opacity: 1
+        top: 95px
+        ul
+          li
+            margin-left: 0
+            .dropdown-menu
+              position: relative
+              padding: 0
+              display: block
+              width: 100%
+              box-shadow: none
+              background: transparent
+              left: 0
+            a
+              color: #000
+              font-family: "Roboto-cond"
+            &:hover
+              a
+                color: #1ab394
+                &::after
+                  display: none
+    .auth
+      margin-top: 25px
+      .auth-btn
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
