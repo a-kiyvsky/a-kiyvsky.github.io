@@ -374,7 +374,8 @@ body
 							margin-top: 25px
 							color: #fff
 							font-size: 16px
-
+					.mobile-collumn
+						display: none
 					&__right-part
 						margin: auto 0
 						.text-wrapper
@@ -421,6 +422,11 @@ body
 					justify-content: space-between
 					position: relative
 					z-index: 1
+					&__row
+						display: flex
+						flex-direction: row
+						justify-content: space-around
+						width: 50%
 					&__element
 						background-color: #fff
 						transform: translateY(-50%)
@@ -428,7 +434,7 @@ body
 						height: 141px
 						padding: 0 16px
 						box-shadow: 0 0 12px rgba(210,210,210,0.5)
-						width: 16%
+						width: 32%
 						h2
 							margin: 5px 0 0 0
 							font-size: 14px
@@ -460,6 +466,11 @@ body
 							position: absolute
 							right: 0
 							z-index: 0
+						&.mobile-collumn
+							display: none
+							width: 100%
+							.yellow-collumn
+								width: 100%
 					&__row
 						display: flex
 						flex-direction: row
