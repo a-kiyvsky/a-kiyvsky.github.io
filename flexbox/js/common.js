@@ -5,4 +5,14 @@ $(function() {
       $('.collapsed-mobile').toggleClass('collapse');
   	});
   });
+  $(document).scroll(function() {
+      var scroll = $(document).scrollTop();
+
+      if( scroll >= 400 ) {
+        $('.mouse_icon').addClass('black');
+      }
+      else if (scroll<400) {
+        $('.mouse_icon').removeClass('black');
+      }
+  })
 });
