@@ -1,5 +1,8 @@
 $(function() {
-
-	var scrollPos = window.scrollY || window.scollTop || document.getElementsByTagName("html")[0].scrollTop;
-  console.log('scroll:', scrollPos);
+  $(document).ready(function(){
+  	$('#nav-icon').click(function(){
+  		$(this).toggleClass('open');
+      $('.collapsed-mobile').toggleClass('collapse');
+  	});
+  });
 });

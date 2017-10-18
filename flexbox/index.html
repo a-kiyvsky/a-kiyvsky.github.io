@@ -83,10 +83,15 @@
 					<nav>
 						<ul>
 							<li><a href="#">Девелопмент групп "Земля Мо"</a></li>
-							<li><a href="#">События</a></li>
-							<li><a href="#">Партнеры</a></li>
-							<li><a href="#">Инвесторам</a></li>
-							<li><a href="#">Новости поселков</a></li>
+							<li class="collapsed-mobile collapse"><a href="#">События</a></li>
+							<li class="collapsed-mobile collapse"><a href="#">Партнеры</a></li>
+							<li class="collapsed-mobile collapse"><a href="#">Инвесторам</a></li>
+							<li class="collapsed-mobile collapse"><a href="#">Новости поселков</a></li>
+							<div id="nav-icon" class="nav-icon-mobile">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
 						</ul>
 					</nav>
 				</div>
@@ -369,14 +374,14 @@
 	<script src="js/scripts.min.js"></script>
 
 	<script type="text/javascript">(function() {
-  if (window.pluso)if (typeof window.pluso.start == "function") return;
-  if (window.ifpluso==undefined) { window.ifpluso = 1;
-    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
-    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
-    var h=d[g]('body')[0];
-    h.appendChild(s);
-  }})();</script>
+		if (window.pluso)if (typeof window.pluso.start == "function") return;
+		if (window.ifpluso==undefined) { window.ifpluso = 1;
+			var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+			s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+			s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+			var h=d[g]('body')[0];
+			h.appendChild(s);
+		}})();</script>
 
-</body>
-</html>
+	</body>
+	</html>
