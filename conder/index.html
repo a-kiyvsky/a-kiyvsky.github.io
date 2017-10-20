@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Conder</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="top-head">
+					<div class="col-md-2">
+						<div class="logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="phones">
+							<div class="phones-element">8 (916) <span>643-46-59</span></div>
+							<div class="phones-element">8 (916) <span>643-46-59</span></div>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="search">
+							<form action="#">
+								<div class="input-group">
+									<input type="text" class="input" placeholder="Что ищем?">
+								</div>
+								<div class="input-group">
+									<input type="submit" value="Поиск" class="submit">
+								</div>
+							</form>
+						</div>
+						<div class="buttons">
+							<a href="#" class="buttons-compare button">Сравнить</a>
+							<div class="line-break">/</div>
+							<a href="#" class="buttons-offer button">Оформить заказ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sub-head">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav>
+							<ul>
+								<li class="home"><a href="#"></a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Монтаж и сервис</a></li>
+								<li><a href="#">Доставка и оплата</a></li>
+								<li><a href="#">Сотрудничество</a></li>
+								<li><a href="#">Система скидок</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="basket">
+							<a href="#">39 товаров / 25 608 руб.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 sidebar">
+					<div class="catalog">
+						<div class="catalog-wrapper">
+							<div class="catalog-wrapper__header">
+								<h2>Кондиционеры</h2>
+								<ul class="list">
+									<li><a href="#">Настенные</a></li>
+									<li><a href="#">Мульти-сплит-системы</a></li>
+									<li><a href="#">Напольно-потолочные</a></li>
+									<li><a href="#">Канальные</a></li>
+									<li><a href="#">Кассетные</a></li>
+								</ul>
+							</div>
+							<div class="catalog-wrapper__header">
+								<h2>Осушители воздуха</h2>
+								<ul class="list">
+									<li><a href="#">Настенные</a></li>
+									<li><a href="#">Мульти-сплит-системы</a></li>
+									<li><a href="#">Напольно-потолочные</a></li>
+									<li><a href="#">Канальные</a></li>
+									<li><a href="#">Кассетные</a></li>
+								</ul>
+							</div>
+							<div class="catalog-wrapper__header">
+								<h2 class="small">Очтистители и<br>увлажнители воздуха</h2>
+								<ul class="list">
+									<li><a href="#">Настенные</a></li>
+									<li><a href="#">Мульти-сплит-системы</a></li>
+									<li><a href="#">Напольно-потолочные</a></li>
+									<li><a href="#">Канальные</a></li>
+									<li><a href="#">Кассетные</a></li>
+								</ul>
+							</div>
+							<div class="catalog-wrapper__header">
+								<h2 class="small">Архив<br>(снятые с производства)</h2>
+								<ul class="list">
+									<li><a href="#">Настенные</a></li>
+									<li><a href="#">Мульти-сплит-системы</a></li>
+									<li><a href="#">Напольно-потолочные</a></li>
+									<li><a href="#">Канальные</a></li>
+									<li><a href="#">Кассетные</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-wrapper">
+						<div class="filter-header">
+							<h2>Фильтр товаров</h2>
+							<a href="#" class="remove">Сброс <i class="fa fa-times" aria-hidden="true"></i></a>
+						</div>
+						<div class="filter-main">
+							<div class="filter-block">
+								<div class="padding">
+									<div class="range-slider">
+										<form action="">
+											<input value="25000" min="0" max="120000" step="500" type="range"/>
+											<input value="50000" min="0" max="120000" step="500" type="range"/>
+											<span>
+												<span class="input-group">
+													<label for="">от</label>
+													<input type="number" value="2500" min="0" max="120000"/>
+												</span>
+												<span class="input-group">
+													<label for="">До</label>
+													<input type="number" value="5000" min="0" max="120000"/>
+												</span>
+											</span>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="filter-block">
+								<div class="padding">
+									<h3>Производитель</h3>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_0" />
+										<label for="radio_0">Brand 1</label>
+									</div>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_1" />
+										<label for="radio_1">Brand 2</label>
+									</div>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_2" />
+										<label for="radio_2">Brand 3</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter-block">
+								<div class="padding">
+									<h3>Инвертное управление</h3>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_3" />
+										<label for="radio_3">да</label>
+									</div>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_4" />
+										<label for="radio_4">нет</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter-block">
+								<div class="padding">
+									<h3>Площадь комнаты</h3>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_5" />
+										<label for="radio_5">до 25 м2</label>
+									</div>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_6" />
+										<label for="radio_6">до 35 м2</label>
+									</div>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_7" />
+										<label for="radio_7">до 50 м2</label>
+									</div>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_8" />
+										<label for="radio_8">до 70 м2</label>
+									</div>
+									<div class="input-group">
+										<input type="radio" class="radio" name="radio" id="radio_9" />
+										<label for="radio_9">до 100 м2</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="filter-wrapper partners">
+						<div class="filter-block">
+							<a href="#">
+								<img src="./img/partners_logo_0.png" alt="">
+							</a>
+						</div>
+						<div class="filter-block">
+							<a href="#">
+								<img src="./img/partners_logo_1.png" alt="">
+							</a>
+						</div>
+						<div class="filter-block">
+							<a href="#">
+								<img src="./img/partners_logo_2.png" alt="">
+							</a>
+						</div>
+						<div class="filter-block">
+							<a href="#">
+								<img src="./img/partners_logo_3.png" alt="">
+							</a>
+						</div>
+						<div class="filter-block">
+							<a href="#">
+								<img src="./img/partners_logo_4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="filter-wrapper banner">
+						<a href="#">
+							<span></span>
+							<img src="./img/promo_t.png" alt="">
+						</a>
+					</div>
+
+				</div>
+
+				<div class="col-md-9 main">
+					<div class="breadcrumbs">
+						<a href="#">Главная</a>
+						<a href="#">Следующая</a>
+						<a href="#">Текущая</a>
+					</div>
+					<div class="main-slider">
+						<div class="slider-element">
+							<img src="./img/slider-img.png" alt="">
+						</div>
+						<div class="slider-element">
+							<img src="./img/slider-img.png" alt="">
+						</div>
+						<div class="slider-element">
+							<img src="./img/slider-img.png" alt="">
+						</div>
+						<div class="slider-element">
+							<img src="./img/slider-img.png" alt="">
+						</div>
+					</div>
+
+					<div class="catalog-wrapper">
+						<div class="catalog-header">
+							<h2>Напольно-потолочные</h2>
+							<a href="#">Прайс-лист каталога</a>
+						</div>
+						<div class="catalog-sort"></div>
+					</div>
+					<div class="pagination">
+						<div class="pagination-element prev"><i class="fa fa-caret-left" aria-hidden="true"></i> Назад</div>
+						<div class="pagination-element">1</div>
+						<div class="pagination-element active">2</div>
+						<div class="pagination-element">3</div>
+						<div class="pagination-element">4</div>
+						<div class="pagination-element next">Вперед <i class="fa fa-caret-right" aria-hidden="true"></i></div>
+					</div>
+					<div class="text">
+						Стандартное, настенное крепление внутреннего блока кондиционера применимо не для каждого помещения. Что делать, если нет возможности установить кондиционер на стене, как это чаще всего делается? Есть выход – купить напольно-потолочный кондиционер. Климатическую технику такого типа устанавливают при условии отсутствия подвесного потолка, прочих ограничений не имеется.<br>Напольно-потолочная сплит-система – современная техника кондиционирования, внешний блок которой монтируется, как обычно, снаружи, а внутренний – на потолке (горизонтальное расположение) или у стены (вертикальное расположение). Для того, чтобы кондиционер не занимал много пространства, он имеет небольшие размеры в глубину, и конечно  – обтекаемые формы.  Воздух из такой системы направлен вдоль стены (вверх к потолку) или вдоль потолка (горизонтально), что исключает риск прямого попадания потоков на человека. А это значит, что если в помещении установлен напольно-потолочный кондиционер , про насморки, больное горло, отиты и простуды летом можно позабыть.  Лучше всего универсальные климатические системы такого типа проявляют свои качества в помещениях большой и средней площади в офисах, в квартирах-студиях. Преимущества напольно-потолочной системы:  • нет прямого потока воздуха в центр помещения, соответственно, нет риска резкого переохлаждения<br>• помещение среднего или большого объема можно охладить очень быстро;<br>• помещение среднего или большого объема можно охладить очень быстро;<br>• Качественный напольно-потолочный кондиционер  – это удачное дополнение интерьера функциональной техникой для комфорта в доме, квартире и офисе. Заказывая на сайте «Климат М» необходимую вам климатическую технику, обязательно воспользуйтесь нашими услугами по установке кондиционеров в Москве. Сделаем все быстро, качественно и недорого!
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="col-md-2">
+				<div class="logo">
+					<a href="#">
+						<img src="./img/logo-footer.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<nav>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-2">
+				<nav>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-2">
+				<nav>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-2">
+				<div class="copyright">
+					Copyright 2017 ©
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="info-wrapper">
+					<div class="info-wrapper__element web">
+						<a href="#">www.conder.ru</a>
+					</div>
+					<div class="info-wrapper__element phone">
+						<a href="#">+375 29 <span>999 99 99</span></a>
+					</div>
+					<div class="info-wrapper__element phone">
+						<a href="#">+375 29 <span>999 99 99</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<script src="https://use.fontawesome.com/c47f6f4f6d.js"></script>
+	<script>
+
+	$('.main-slider').slick({
+		accessibility: true,
+		dots: true
+	});
+
+	(function() {
+
+		var parent = document.querySelector(".range-slider");
+		if(!parent) { alert('error')};
+
+		var
+		rangeS = parent.querySelectorAll("input[type=range]"),
+		numberS = parent.querySelectorAll("input[type=number]");
+
+		rangeS.forEach(function(el) {
+			el.oninput = function() {
+				var slide1 = parseFloat(rangeS[0].value),
+				slide2 = parseFloat(rangeS[1].value);
+
+				if (slide1 > slide2) {
+					[slide1, slide2] = [slide2, slide1];
+					// var tmp = slide2;
+					// slide2 = slide1;
+					// slide1 = tmp;
+				}
+
+				numberS[0].value = slide1;
+				numberS[1].value = slide2;
+			}
+		});
+
+		numberS.forEach(function(el) {
+			el.oninput = function() {
+				var number1 = parseFloat(numberS[0].value),
+				number2 = parseFloat(numberS[1].value);
+
+				if (number1 > number2) {
+					var tmp = number1;
+					numberS[0].value = number2;
+					numberS[1].value = tmp;
+				}
+
+				rangeS[0].value = number1;
+				rangeS[1].value = number2;
+
+			}
+		});
+
+	})();
+	</script>
+
+</body>
+</html>
