@@ -1,0 +1,87 @@
+﻿html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+html, body,h1,h2,h3,h4,ul,form {margin:0;padding:0;}
+a { background: transparent;}a:active,a:hover {outline: 0;}
+b,strong {font-weight: bold;}dfn {font-style: italic;}
+a, a:hover, a:link, a:visited, a:focus,img {border: 0;color:inherit;text-decoration: none;}
+button,input,optgroup,select,textarea {color: inherit;font: inherit;margin: 0;}
+button {overflow: visible;}
+button,select { text-transform: none;}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button;cursor: pointer;}
+button[disabled],html input[disabled] {cursor: default;}
+button::-moz-focus-inner,input::-moz-focus-inner { border: 0;  padding: 0;}
+input {line-height: normal;}
+input[type="checkbox"],input[type="radio"] { box-sizing: border-box; padding: 0; }
+textarea {overflow: auto;}
+*:focus,a:focus {outline: none;}
+li {list-style-type: none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;}
+audio,canvas,progress,video { display: inline-block;vertical-align: baseline;}
+
+hr {-moz-box-sizing: content-box;box-sizing: content-box;height: 0;}
+code,kbd,pre,samp {font-family: monospace, monospace; font-size: 1em;}
+table {border-collapse: collapse;border-spacing: 0;}td,th {padding: 0;}
+div, li, h2, input { box-sizing: border-box; }
+
+@font-face { font-family: 'PFAdamantPro-Bold';
+src: url('../fonts/PFAdamantPro-Bold.eot'); src: url("../fonts/PFAdamantPro-Bold.ttf"), url("../fonts/PFAdamantPro-Bold.eot"),
+url("../fonts/PFAdamantPro-Bold.svg"), url("../fonts/PFAdamantPro-Bold.woff"); font-weight: normal; font-style: normal;
+}
+@font-face { font-family: 'PFAdamantPro-ExtraBold';
+src: url('../fonts/PFAdamantPro-ExtraBold.eot'); src: url("../fonts/PFAdamantPro-ExtraBold.ttf"), url("../fonts/PFAdamantPro-ExtraBold.eot"),
+url("../fonts/PFAdamantPro-ExtraBold.svg"), url("../fonts/PFAdamantPro-ExtraBold.woff"); font-weight: normal; font-style: normal;
+}
+@font-face { font-family: 'PFAdamantPro-SemiBold';
+src: url('../fonts/PFAdamantPro-SemiBold.eot'); src: url("../fonts/PFAdamantPro-SemiBold.ttf"), url("../fonts/PFAdamantPro-SemiBold.eot"),
+url("../fonts/PFAdamantPro-SemiBold.svg"), url("../fonts/PFAdamantPro-SemiBold.woff"); font-weight: normal; font-style: normal;
+}
+  @font-face { font-family: 'HelveticaNeueCyr-Bold';
+ src: url('../fonts/HelveticaNeueCyr-Bold.eot'); src: url("../fonts/HelveticaNeueCyr-Bold.ttf"), url("../fonts/HelveticaNeueCyr-Bold.eot"),
+ url("../fonts/HelveticaNeueCyr-Bold.svg"), url("../fonts/HelveticaNeueCyr-Bold.woff"); font-weight: normal; font-style: normal;
+ }
+ @font-face { font-family: 'PFAdamantPro-ExtraBoldItalic';
+src: url('../fonts/PFAdamantPro-ExtraBoldItalic.eot'); src: url("../fonts/PFAdamantPro-ExtraBoldItalic.ttf"), url("../fonts/PFAdamantPro-ExtraBoldItalic.eot"),
+url("../fonts/PFAdamantPro-ExtraBoldItalic.svg"), url("../fonts/PFAdamantPro-ExtraBoldItalic.woff"); font-weight: normal; font-style: normal;
+}
+/*шрифты*/
+
+.centerlayer {min-width: 900px;max-width:1920px;margin:0px auto;}
+.content {width: 950px;margin:0px auto;position: relative;}
+.floatli>li {float:left;}
+.floatli:after, .content:after {content: "";display: block;height: 0;clear: both;visibility: hidden;}
+.vr-algn li:before, .one_vralgn:before { content: ""; display: inline-block; vertical-align: middle; height: 100%;zoom:1;}
+.vr-algn .out_cont, .one_vralgn .out_cont {display: inline-block; vertical-align: middle;}
+.out_cont {display: inline-block; vertical-align: middle;}
+.bl-lt {float:left;display: block;}
+.bl-rt {float:right;display: block;}
+.open_modal {cursor:pointer;}
+.open_modal:hover {opacity: 0.8;}
+
+
+
+
+/*модальное окно*/
+	.modal_bg{position:fixed;display:none;z-index:1000;left:0;top:0;background:rgba(0,0,0,0.5);	width: 100%;height: 100%;}
+	.modal_window {position:absolute;display:none;left:50%;z-index:1100;
+	width:250px;padding:20px 0px;background: #fff;text-align: center;
+	}
+	button.modal_close {border:0px;background:none;position:absolute;right:1px;top:1px;color:#000;}
+/*модальное окно*/
+
+
+/*блок форм*/
+input {border:none;margin:3px 0;}
+input[type='text'] {width:265px;height:40px;background: #fff;border:2px solid #96717f;
+	border-radius: 20px;padding:10px 30px;}
+input[type="text"]:focus {border-color: #c41036;}
+input[type='submit'] {width:270px;height:40px;background: #c41036;margin-top:20px;
+color:#fff;text-transform: uppercase;border-radius: 20px;font-size: 16px;font-weight: 700;}
+input[type='submit']:hover {opacity: 0.8;}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ font-size:14px; color: #5d6267; }
+input::-moz-placeholder, textarea::-moz-placeholder { font-size: 14px; color: #5d6267; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { font-size: 14px; color: #5d6267; }
+input::placeholder, textarea::placeholder { font-size: 14px; color: #5d6267; }
+
+input:focus:required:invalid, textarea:focus:required:invalid {}
+input:required:valid, textarea:required:valid {}
+/*блок форм*/

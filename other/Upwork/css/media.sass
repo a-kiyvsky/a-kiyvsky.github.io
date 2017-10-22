@@ -1,0 +1,169 @@
+/*==========  Desktop First Method  ==========
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1200px)
+
+/* Medium Devices, Desktops
+@media only screen and (min-width: 992px)
+
+@media only screen and (max-width: 650px)
+    .main
+        height: 835px
+        nav
+            display: none
+            background-color: rgb(255, 255, 255)
+            border-radius: 5px
+            padding: 15px
+            margin: 21px 0px
+            position: absolute
+            right: 0
+            left: 50%
+            transform: translateX(-50%)
+            z-index: 999
+            ul
+                margin: 0
+                position: relative
+                &::after
+                    content: ""
+                    position: absolute
+                    top: -32px
+                    right: -4px
+                    width: 0
+                    height: 0
+                    border-style: solid
+                    transition: all 0.5s
+                    border-width: 0 10px 12px 10px
+                    border-color: transparent transparent #ffffff transparent
+                li
+                    display: block
+                    text-align: center
+                    margin: 5px auto
+                    a
+                        color: #364f6b
+                        font-size: 21px
+        h1
+            margin: 50px 0 0 0
+            font-size: 19px
+        p
+            margin: 15px auto 30px auto
+            font-size: 17px
+    .second
+        height: 1065px
+        top: -75px
+        .col-md-4
+            margin-bottom: 35px
+        h2
+            margin-top: 55px
+        .second-promo
+            margin-top: 50px
+    .programm
+        #owlcarousel
+            margin-top: 20px
+        .item
+            .programm-card
+                width: 270px
+                height: 500px
+            .programm-image
+                top: 25px
+                left: 54%
+                width: 291px
+    .more-info
+        min-height: 495px
+        .video-wrapper
+            height: 182px
+            iframe
+                height: 100%
+            &::before
+                height: 255px
+                width: 619px
+    .coast
+        height: 335px
+        min-height: 410px
+        h2
+            margin-bottom: 15px
+        form
+            .field
+                margin: 7px auto
+            .button
+                width: 262px
+                border-radius: 5px
+                margin: 5px auto
+    .needed
+        padding-bottom: 111px
+        .needed-wrapper
+            .count
+                margin-top: 105px
+                &::before
+                    top: 47%
+                    left: 45%
+            .c_second
+                &::before
+                    transform: translate(-50%, -50%) rotate(45deg)
+                    left: 51%
+                    top: 33%
+            .c_third
+                &::before
+                    left: 50%
+                    top: 50%
+    .steps
+        height: 995px
+        top: 0
+        h2
+            margin-bottom: 0px
+            margin-top: 0
+
+        .steps-element
+            .count
+                width: 90px
+                height: 90px
+                line-height: 90px
+                font-size: 44px
+                margin: 0 auto 25px auto
+            .description
+                .steps-header
+                    text-align: center
+                .steps-descr
+                    text-align: center
+    .about-teacher
+        .photo-element_wrapper
+            margin-bottom: 35px
+            img
+                width: 75%
+                margin: 0 auto
+                position: relative
+                display: block
+        .about-teacher_row
+            .info-element
+                margin-top: 0px
+    .author-work
+        height: auto
+        padding-bottom: 50px
+    .why-not
+        &::after
+            top: 185px
+            right: -90px
+        .wrapper
+            p
+                width: auto
+    .guaranties
+        h4
+            margin: 40px auto 10px auto
+    .last
+        h4
+            margin: 40px auto 100px auto
+    .coast_full
+        height: 1190px
+        .right-part
+            transform: translateY(0%)
+        .left-part
+            .box
+                img
+                    width: 440px
+                    left: -125px
+                    position: relative
+                .coast_promo
+                    left: 10px
+
+/* Custom, iPhone Retina
+
+@media only screen and (max-width: 320px)

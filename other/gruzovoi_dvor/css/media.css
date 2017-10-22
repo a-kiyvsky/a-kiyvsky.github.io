@@ -1,0 +1,149 @@
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1210px) {
+  header {
+    position: absolute;
+    height: 100px;
+    min-width: 768px; }
+    header .container {
+      height: 125px; }
+    header .logo {
+      top: 41%; }
+    header nav {
+      display: none; }
+    header .phone-wrapper {
+      top: 45%; }
+
+  .main-screen {
+    padding: 130px 0 0 0;
+    min-width: 768px; }
+    .main-screen .container {
+      position: relative;
+      transform: translateX(0%);
+      left: 0; }
+      .main-screen .container h1 {
+        font-size: 26px; }
+        .main-screen .container h1 span {
+          font-size: 45px; }
+      .main-screen .container .bullets-wrapper {
+        margin-top: 20px;
+        transform: translateX(0%); }
+        .main-screen .container .bullets-wrapper .bullets {
+          padding-left: 243px;
+          box-sizing: border-box; }
+      .main-screen .container .main-screen_form {
+        width: 100%; }
+        .main-screen .container .main-screen_form h2 {
+          font-size: 25px; }
+        .main-screen .container .main-screen_form .text-field {
+          width: 215px;
+          margin: 0 5px; }
+        .main-screen .container .main-screen_form .submit-button {
+          width: 215px;
+          font-size: 16px;
+          margin: 0 5px; }
+
+  .container {
+    width: 768px; } }
+@media only screen and (max-width: 769px) {
+  .container {
+    width: 625px; }
+
+  header {
+    min-width: 625px; }
+
+  .main-screen {
+    min-width: 625px; }
+    .main-screen h1 {
+      font-size: 22px !important; }
+    .main-screen .bullets {
+      padding-left: 190px !important; }
+    .main-screen .main-screen_form {
+      padding: 10px 0 0 0; }
+      .main-screen .main-screen_form h2 {
+        font-size: 22px !important; }
+        .main-screen .main-screen_form h2 span {
+          font-size: 26px !important; }
+      .main-screen .main-screen_form .text-field {
+        width: 275px !important; }
+      .main-screen .main-screen_form .submit-button {
+        width: 95% !important;
+        margin: 15px 5px !important; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 650px) {
+  .show_m {
+    display: block !important; }
+
+  header {
+    position: absolute;
+    height: auto;
+    min-width: 320px;
+    padding: 2px 0; }
+    header .logo {
+      position: relative;
+      transform: translateY(0%);
+      float: none;
+      top: auto;
+      display: inline-block; }
+      header .logo a {
+        font-size: 12px; }
+        header .logo a span {
+          font-size: 14px; }
+    header nav {
+      display: none; }
+    header .phone-wrapper {
+      display: block;
+      transform: translateY(0);
+      position: relative;
+      float: none;
+      top: auto;
+      right: auto;
+      text-align: center;
+      margin-top: 0px; }
+      header .phone-wrapper .phone {
+        margin-bottom: 0; }
+      header .phone-wrapper .call-me_btn {
+        display: none; }
+
+  .container {
+    width: 320px; }
+
+  .main-screen {
+    padding: 200px 0 50px 0px;
+    min-width: 320px;
+    width: 100%; }
+    .main-screen .container {
+      position: relative;
+      bottom: auto;
+      left: 0;
+      transform: translateX(0%); }
+      .main-screen .container h1 {
+        font-size: 17px !important; }
+        .main-screen .container h1 span {
+          font-size: 31px !important; }
+      .main-screen .container .bullets {
+        padding-left: 0 !important; }
+      .main-screen .container .bullets-wrapper {
+        transform: translateX(0%);
+        padding-left: 50px; }
+        .main-screen .container .bullets-wrapper .bullet-element {
+          font-size: 12px; }
+      .main-screen .container .main-screen_form {
+        padding: 1px 10px 0 10px;
+        width: 100%; }
+        .main-screen .container .main-screen_form h2 {
+          font-size: 18px;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+          .main-screen .container .main-screen_form h2 span {
+            font-size: 24px; }
+        .main-screen .container .main-screen_form .text-field {
+          margin: 3px 0;
+          width: 100%; }
+        .main-screen .container .main-screen_form .submit-button {
+          width: 100%;
+          font-size: 16px;
+          margin: 4px 0; } }
+/* Custom, iPhone Retina */
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,735 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.owl-dots
+	counter-reset: dots
+	span
+		&::before
+			counter-increment: dots
+			content: counter(dots)
+
+header
+	height: 110px
+	background-color: #fff
+	border: 1px solid rgb(222,220,220)
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.15)
+	z-index: 999
+	.logo
+		padding-top: 40px
+		a
+			color: #3b3b3b
+			line-height: 1
+			font-weight: 600
+			padding-left: 70px
+			display: block
+			position: relative
+			text-decoration: none
+			&::before
+				content: ""
+				position: absolute
+				display: block
+				top: 60%
+				left: 0
+				transform: translateY(-59%)
+				width: 56px
+				height: 56px
+				background-image: url("../img/header-logo.png")
+				background-position: center
+				background-size: cover
+				background-repeat: no-repeat
+			span
+				display: block
+				color: #cd3333
+	nav
+		ul
+			padding: 0
+			margin: 40px 0 0 0
+			li
+				display: inline-block
+				list-style-type: none
+				margin: 0 30px
+				a
+					font-size: 14px
+					font-weight: 400
+					color: #626262
+					text-decoration: none
+					text-transform: uppercase
+					transition: color 0.5s
+					&:hover
+						text-decoration: none
+						color: #cd3333
+	.header-info
+		border-left: 1px solid rgba(220, 220, 220,0.5)
+		padding-left: 15px
+		margin-top: 30px
+		padding: 10px 0 7px 15px
+		.info-block
+			display: inline-block
+			&.time
+				margin-right: 60px
+				p
+					&::before
+						background-image: url("../img/header-time.png")
+			p
+				margin: 0
+				line-height: 1
+				font-weight: 400
+				color: #7b7b7b
+				padding-left: 25px
+				position: relative
+				&::before
+					content: ""
+					width: 15px
+					height: 15px
+					background-image: url("../img/header-phone.png")
+					background-position: center
+					background-size: cover
+					background-repeat: no-repeat
+					position: absolute
+					display: block
+					left: 0
+					top: 0
+				span
+					display: block
+					line-height: 1.6
+					font-weight: 600
+.main-screen
+	padding-bottom: 30px
+	background-color: #fafafa
+	.composition
+		h1
+			font-weight: 400
+			font-size: 48px
+			color: #3b3b3b
+			line-height: 1
+			margin: 155px 0 15px 0
+		p
+			font-weight: 400
+			font-size: 18px
+			color: #7b7b7b
+			margin: 20px 0 25px 0
+		.articul
+			font-size: 14px
+			font-weight: 400
+			color: #626262
+			display: inline-block
+			margin-right: 20px
+		.stars
+			display: inline-block
+			i
+				color: #f7b538
+		.order
+			font-size: 18px
+			text-transform: uppercase
+			text-decoration: none
+			font-weight: 400
+			color: #fff
+			background-color: #cd3333
+			border-radius: 35px
+			display: inline-block
+			width: 100%
+			height: 55px
+			line-height: 55px
+			text-align: center
+			margin-left: -15px
+			transition: background-color 0.5s
+			&:hover
+				background-color: #b32d2d
+		.video
+			border: 1px solid #f7b538
+			font-size: 16px
+			text-transform: uppercase
+			text-decoration: none
+			font-weight: 400
+			color: #f7b538
+			border-radius: 35px
+			display: inline-block
+			width: 100%
+			height: 55px
+			line-height: 55px
+			text-align: center
+			white-space: nowrap
+			transition: all 0.5s
+			i
+				font-size: 12px
+			&:hover
+				background-color: #f7b538
+				color: #fff
+
+	.bullet-wrapp
+		img.promo
+			position: absolute
+			width: 350px
+			top: 70px
+		.price
+			text-align: right
+			margin-top: 55px
+			position: relative
+			.old
+				font-weight: 600
+				font-size: 24px
+				color: #3b3b3b
+				text-decoration: line-through
+				display: inline-block
+				margin-right: 15px
+			.new
+				font-weight: 600
+				font-size: 36px
+				color: #cd3333
+				display: inline-block
+		.promo-text
+			font-weight: 600
+			font-size: 24px
+			color: #3b3b3b
+			text-align: center
+		.promo-info
+			text-align: right
+			list-style-type: none
+			margin-top: 42px
+			position: relative
+			li
+				position: relative
+				margin: 17px 0
+				span.text
+					display: inline-block
+					font-weight: 700
+					font-size: 18px
+					color: #3b3b3b
+				span.dot
+					display: inline-block
+					position: relative
+					margin-right: 15px
+					top: 0
+					img
+						z-index: 999
+						position: relative
+						top: 5px
+						float: left
+					&::after
+						content: ""
+						height: 1px
+						width: 98%
+						z-index: 99
+						right: 0px
+						top: 17px
+						position: absolute
+						background-color: #000
+						display: block
+	.plus-wrapp
+		margin-top: 65px
+		transform: translateY(55%)
+		padding: 35px 0 25px 0
+		border-radius: 5px
+		background-color: #fff
+		box-shadow: 5px 8.5px 30px 0 rgba(0,0,0,0.15)
+		.element
+			text-align: center
+			p
+				font-weight: 400
+				color: #3b3b3b
+				margin-bottom: 0
+
+.about
+	padding-top: 85px
+	padding-bottom: 100px
+	h2
+		text-align: center
+		font-weight: 400
+		font-size: 24px
+		color: #3b3b3b
+		margin: 140px auto 50px auto
+	.block
+		position: relative
+		&.left
+			.img-wrapper
+				position: relative
+				&::before
+					z-index: -1
+					display: block
+					content: ""
+					background-color: rgb(250,250,250)
+					position: absolute
+					width: 100%
+					top: 50%
+					right: 100%
+					transform: translateY(-50%)
+					height: 300px
+		&.right
+			.img-wrapper
+				position: relative
+				&::before
+					z-index: -1
+					display: block
+					content: ""
+					background-color: rgb(250,250,250)
+					position: absolute
+					width: 100%
+					top: 50%
+					left: 100%
+					transform: translateY(-50%)
+					height: 300px
+		margin-bottom: 25px
+		.img-wrapper
+			position: relative
+			background-color: #fff
+			box-shadow: 5px 8.5px 30px 0 rgba(0,0,0,0.15)
+			width: 100%
+			height: 500px
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+			.dot
+				width: 33px
+				height: 33px
+				background-image: url("../img/dot_extra.png")
+				background-position: center
+				background-size: cover
+				background-repeat: no-repeat
+				position: absolute
+		.text-wrapper
+			margin-top: 80px
+			h3
+				font-weight: 400
+				font-size: 24px
+				color: #3b3b3b
+				margin: 0
+			p
+				font-weight: 400
+				color: #7b7b7b
+				margin: 0
+
+.promo_0
+	background-color: #f2f2f2
+	padding: 20px 0
+	.img
+		img
+			width: 100%
+	.price
+		text-align: center
+		margin-top: 120px
+		.new
+			font-weight: 600
+			font-size: 36px
+			color: #cd3333
+			margin: 0
+			line-height: 1
+			i
+				font-size: 33px
+		.old
+			font-weight: 600
+			font-size: 24px
+			color: #3b3b3b
+			text-decoration: line-through
+	.text-description
+		h3
+			font-size: 36px
+			font-weight: 400
+			color: #3b3b3b
+			line-height: 1.3
+			margin: 0
+			margin-top: 90px
+		p
+			font-size: 24px
+			font-weight: 400
+			color: #3b3b3b
+			margin: 0
+	.get-now
+		width: 100%
+		border-radius: 35px
+		text-transform: uppercase
+		text-decoration: none
+		font-weight: 400
+		color: #fff
+		font-size: 18px
+		height: 55px
+		line-height: 55px
+		text-align: center
+		background-color: #cd3333
+		display: block
+		transition: background-color 0.5s
+		margin-top: 130px
+		&:hover
+			background-color: #b32d2d
+
+.params
+	h2
+		font-size: 26px
+		font-weight: 400
+		color: #3b3b3b
+		text-align: center
+		margin-top: 150px
+	.t-head
+		ul
+			margin-top: 345px
+			padding: 0
+			li
+				font-weight: 600
+				font-size: 18px
+				color: #3b3b3b
+				list-style-type: none
+				margin-bottom: 40px
+	.block
+		position: relative
+		&:hover
+			.border
+				border: 2px solid #e8e8e8
+				padding: 13px
+			.order-now
+				display: block
+		.border
+			border-radius: 5px
+			padding: 15px
+			box-sizing: padding-box
+		h4
+			font-weight: 600
+			font-size: 26px
+			color: #3b3b3b
+			text-align: center
+			margin-top: 10px
+		.img-wrapp
+			margin: 0 auto
+			position: relative
+			display: block
+			text-align: center
+			img
+				width: 160px
+				margin: 0 auto
+		ul
+			padding: 0
+			list-style-type: none
+			margin-top: 72px
+			li
+
+				font-weight: 400
+				font-size: 16px
+				color: #7b7b7b
+				margin-bottom: 25px
+		.price
+			&.price_old
+				.new
+					color: #3b3b3b
+			text-align: center
+			margin-top: 15px
+			position: relative
+			.old
+				font-weight: 600
+				font-size: 24px
+				color: #3b3b3b
+				text-decoration: line-through
+				display: inline-block
+				margin-right: 15px
+			.new
+				font-weight: 600
+				font-size: 36px
+				color: #cd3333
+				display: inline-block
+	.order-now
+		width: 90%
+		border-radius: 35px
+		text-transform: uppercase
+		text-decoration: none
+		font-weight: 400
+		color: #fff
+		font-size: 18px
+		height: 55px
+		line-height: 55px
+		text-align: center
+		background-color: #cd3333
+		display: block
+		transition: background-color 0.5s
+		margin-top: 10px
+		display: none
+		position: absolute
+		bottom: -65px
+		&:hover
+			background-color: #b32d2d
+
+.review
+	padding-bottom: 200px
+	.col-md-12
+		text-align: center
+	h2
+		font-weight: 400
+		font-size: 36px
+		color: #3b3b3b
+		text-align: center
+		margin: 25px auto 60px auto
+	.add-review
+		font-size: 18px
+		font-weight: 400
+		text-decoration: underline
+		line-height: 1.2
+		text-align: center
+		margin: 0 auto
+		position: relative
+		display: inline-block
+		color: #f7b538
+		margin-top: 25px
+
+	.review-block
+		text-align: left
+		margin-bottom: 60px
+		.header
+			.img-wrapp
+				width: 48px
+				height: 48px
+				border-radius: 50%
+				overflow: hidden
+				display: inline-block
+				vertical-align: top
+				img
+					width: 100%
+					position: relative
+					top: 50%
+					left: 50%
+					transform: translate(-50%,-50%)
+
+			.text-wrapp
+				display: inline-block
+				margin-left: 15px
+				.name
+					font-weight: 600
+					color: #3b3b3b
+					display: inline-block
+					line-height: 1
+				.stars
+					display: inline-block
+					margin-left: 15px
+					i
+						color: #f7b538
+				.last-name
+					line-height: 1
+					font-size: 14px
+					font-weight: 400
+					color: #7b7b7b
+		.rev-text
+			font-weight: 400
+			color: #7b7b7b
+			margin-top: 15px
+	.owl-carousel
+		.owl-nav
+			position: relative
+			.owl-prev,.owl-next
+				position: absolute
+				top: 50%
+				transform: translateY(23%)
+				background-color: transparent
+				&:hover
+					background-color: transparent
+					i
+						color: #f7b538
+				&:active
+					i
+						color: #7b7b7b
+				i
+					color: #e8e8e8
+					font-size: 25px
+
+			.owl-prev
+				left: 170px
+			.owl-next
+				right: 170px
+		.owl-dots
+			.owl-dot
+				span
+					border-radius: 50%
+					background-color: #e8e8e8
+					width: 48px
+					height: 48px
+					position: relative
+					transition: all 0.5s
+					&::before
+						line-height: 48px
+						font-size: 24px
+						color: #7b7b7b
+						font-weight: 400
+				&:hover
+					span
+						background-color: #d0d0d0
+						&::before
+							color: #fff
+				&.active
+					span
+						background-color: #f7b538
+						&::before
+							color: #fff
+
+
+.sertificat
+	padding: 100px 0
+	.wrapper
+		background-color: #fff
+		box-shadow: 5px 8.5px 30px 0px rgba(0,0,0,0.15)
+		position: relative
+		padding: 45px
+		&::before
+			content: ""
+			width: 1000%
+			position: absolute
+			z-index: -1
+			top: 50%
+			left: -50%
+			transform: translate(-50%,-50%)
+			height: 300px
+			background-color: rgb(242,242,242)
+		h2
+			font-weight: 400
+			font-size: 36px
+			color: #3b3b3b
+			text-align: center
+			margin-top: 0
+.garanties
+	h2
+		font-size: 26px
+		font-weight: 400
+		color: #3b3b3b
+		text-align: center
+		margin: 0 0 60px 0
+	.element
+		text-align: center
+		.img-wrapp
+			height: 39px
+			position: relative
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%)
+		h4
+			font-size: 18px
+			font-weight: 600
+			color: #3b3b3b
+			margin: 15px 0
+		p
+			margin: 0
+			font-weight: 400
+			color: #7b7b7b
+		.more
+			color: #f7b538
+			font-weight: 400
+			text-decoration: none
+			margin: 10px 0
+			&:hover
+				text-decoration: underline
+
+.contacts
+	padding: 100px 0
+	.map-place
+		background-color: #3b3b3b
+		height: 355px
+		width: 100%
+	.wrapper
+		background-color: #fff
+		height: 450px
+		box-shadow: 5px 8.5px 30px 0px rgba(0,0,0,0.15)
+		position: relative
+		padding: 45px
+		&::before
+			content: ""
+			width: 1000%
+			position: absolute
+			z-index: -1
+			top: 50%
+			left: -50%
+			transform: translate(-50%,-50%)
+			height: 300px
+			background-color: rgb(242,242,242)
+		h2
+			font-weight: 400
+			font-size: 36px
+			color: #3b3b3b
+	.footer-info
+		padding-left: 15px
+		margin-top: 15px
+		padding: 10px 0 7px 0px
+		.info-block
+			display: inline-block
+			&.time
+				margin-right: 60px
+				p
+					&::before
+						background-image: url("../img/header-time.png")
+			p
+				margin: 0
+				line-height: 1
+				font-weight: 400
+				color: #7b7b7b
+				padding-left: 25px
+				position: relative
+				&::before
+					content: ""
+					width: 15px
+					height: 15px
+					background-image: url("../img/header-phone.png")
+					background-position: center
+					background-size: cover
+					background-repeat: no-repeat
+					position: absolute
+					display: block
+					left: 0
+					top: 0
+				span
+					display: block
+					line-height: 1.6
+					font-weight: 600
+footer
+	background-color: #2d2d2d
+	padding: 15px 0
+	.copyright
+		font-weight: 400
+		font-size: 16px
+		color: #808080
+	a
+		font-weight: 400
+		font-size: 16px
+		color: #808080
+		text-align: right
+		text-decoration: underline
+		&:hover
+			color: #fff
+
+
+@import "media" // Всегда в конце

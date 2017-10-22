@@ -1,0 +1,20 @@
+/* font-family: "HeliosRegular"; */
+@font-face {
+    font-family: "HeliosRegular";
+    src: url("../fonts/HeliosRegular/HeliosRegular.eot");
+    src: url("../fonts/HeliosRegular/HeliosRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HeliosRegular/HeliosRegular.woff") format("woff"),
+    url("../fonts/HeliosRegular/HeliosRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HeliosBlack"; */
+@font-face {
+    font-family: "HeliosBlack";
+    src: url("../fonts/HeliosBlack/HeliosBlack.eot");
+    src: url("../fonts/HeliosBlack/HeliosBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HeliosBlack/HeliosBlack.woff") format("woff"),
+    url("../fonts/HeliosBlack/HeliosBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

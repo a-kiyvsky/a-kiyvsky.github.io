@@ -1,0 +1,759 @@
+body
+  top: 0
+  left: 0
+  margin: 0
+  padding: 0
+
+.clearfix::after
+  content: " "
+  visibility: hidden
+  display: block
+  height: 0
+  clear: both
+
+.container
+  width: 960px
+  margin: auto
+  padding: 0
+
+section
+  min-width: 980px
+
+h1
+  font-size: 36px
+  font-family: "MyriadProBold", sans-serif
+  color: #fff
+  font-weight: bold
+  line-height: 1.111
+  text-align: left
+  text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.6)
+  text-transform: uppercase
+
+h2
+  font-size: 25px
+  font-family: "Roboto", sans-serif
+  font-weight: 300
+  color: #454545
+  line-height: 1.2
+  text-align: center
+  margin: 0
+  &::after
+    content: ""
+    width: 115px
+    height: 6px
+    margin: 30px auto 0 auto
+    position: relative
+    display: block
+    background-color: #e2e2e2
+
+/* HEADER */
+header
+  background-image: url('../img/header_bg.jpg')
+  background-size: cover
+  background-position: top center
+  padding: 0 0 125px 0
+  min-width: 980px
+  width: 100%
+
+.logo
+  display: inline-block
+  width: 125px
+  height: auto
+  margin-top: 20px
+  left: 0
+
+.head-mnu
+  display: inline-block
+  right: 0
+  float: right
+  margin-top: 35px
+
+.head-mnu_nav
+  display: inline-block
+  margin: 0 10px 0 10px
+  a
+    font-size: 14px
+    font-family: "Roboto"
+    font-weight: 500
+    color: #fff
+    text-shadow: 0.5px 0.8px 2px rgba(0, 0, 0, 0.4)
+    text-decoration: none
+    transition: all 0.3s
+    &:hover
+      color: #d9466c
+
+.header-content
+  width: 100%
+  border-left: 6px solid #d25973
+  margin-top: 100px
+  padding: 10px 0 10px 0
+  h1
+    margin: 0 0 0 30px
+  p
+    font-size: 20px
+    font-family: "MyriadProSemiBold", sans-serif
+    color: #fff
+    text-align: left
+    text-shadow: 0px 1px 2.7px rgba(0, 0, 0, 0.6)
+    margin-left: 30px
+    span
+      margin-top: 15px
+      font-family: "MyriadProRegular", sans-serif
+      font-size: 19px
+      position: relative
+      display: block
+
+/* First Section */
+.first_section
+  padding: 80px 0 80px 0
+
+.problems
+  text-align: center
+  margin-top: 40px
+
+.problem
+  width: 315px
+  display: inline-block
+  vertical-align: top
+  margin-bottom: 60px
+
+.problem-icon
+  display: inline-block
+  width: 18%
+  vertical-align: top
+
+.problem-description
+  display: inline-block
+  width: 80%
+  text-align: left
+
+.problem-description_header
+  font-size: 16px
+  font-family: "Roboto"
+  font-weight: 400
+  color: rgb(47, 47, 47)
+  margin-bottom: 10px
+
+.problem-description_add
+  font-size: 14px
+  font-family: "Roboto"
+  font-weight: 400
+  color: rgb(109, 109, 109)
+  line-height: 1.2
+
+/* second section */
+.second_section
+  padding: 50px 0 50px 0
+  position: relative
+  overflow: hidden
+  background-image: url('../img/second_section_img.png')
+  background-position: left bottom
+  background-repeat: no-repeat
+  background-color: #f7f8f8
+  img
+    position: absolute
+    bottom: 0
+    z-index: 100
+    left: 0
+  .container
+    z-index: 1555000
+  .wrapper
+    z-index: 200
+    float: right
+    width: 50%
+  .left
+    text-align: left
+    &::after
+      left: 0
+      margin: 30px 0 0 0
+
+.price_block_text
+  font-size: 14px
+  font-family: "Roboto"
+  color: #fff
+  margin: 0
+  padding: 0
+  line-height: 3.266
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4)
+
+.second_section-list
+  padding: 0 0 0 20px
+.second_section-list_item
+  display: inline-block
+  width: 90%
+  margin: 0
+  padding: 0
+  font-size: 14px
+  font-family: "Roboto"
+  font-weight: 400
+  color: rgb(109, 109, 109)
+  line-height: 1.2
+  text-align: left
+  list-style: circle
+  position: relative
+  margin: 10px 0 10px 0
+  &:before
+    content: ""
+    position: absolute
+    top: 5px
+    left: -20px
+    line-height: 1.8em
+    padding: 0
+    width: 9px
+    height: 9px
+    border-radius: 50%
+    background-color: #b26e7e
+
+/* Third Section */
+.join_block_1
+  padding: 20px 0
+  background-image: url('../img/third_section_bg.png')
+  background-position: center
+  background-size: cover
+  text-align: center
+  h3
+    font-size: 22px
+    font-family: "Roboto"
+    color: #fff
+    font-weight: bold
+    line-height: 2.078
+    text-align: center
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3)
+    margin: 0
+.price_block
+  background-image: url('../img/price_block_bg.png')
+  background-repeat: no-repeat
+  width: 300px
+  height: 50px
+  display: inline-block
+  margin: 20px auto 20px auto
+  vertical-align: middle
+.old_price
+  display: inline-block
+  width: 40%
+  height: 100%
+  position: relative
+
+.old_price_container
+  font-size: 12px
+  font-family: "Roboto"
+  font-weight: 400
+  color: #fff
+  line-height: 1.125
+  text-align: center
+  margin-top: 5px
+  span
+    font-size: 21px
+    font-family: "Roboto"
+    color: #fff
+    font-weight: bold
+    transform: matrix( 1.2,0,0,1.2,0,0)
+    position: relative
+    z-index: 200
+    &::before
+      content: ""
+      position: absolute
+      border-top: 2px solid #fff
+      z-index: 300
+      width: 110%
+      height: 100%
+      top: 10px
+      transform: rotate(-10deg)
+
+
+.new_price
+  display: inline-block
+  position: relative
+  font-size: 34px
+  font-family: "Roboto"
+  color: rgb(50, 57, 74)
+  font-weight: bold
+  width: 57%
+  height: 100%
+  text-align: center
+  i
+    font-size: 30px
+
+.button
+  font-size: 18px
+  font-family: "Roboto"
+  color: #fff
+  font-weight: bold
+  line-height: 2.54
+  text-align: center
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6)
+  border-radius: 4px
+  background-color: #d9466c
+  padding: 17px 15px
+  text-decoration: none
+  border: none
+  margin-left: 25px
+  transition: all 0.5s
+  cursor: pointer
+  &:hover
+    background-color: #fd3c6e
+
+
+/* Четвертая секция */
+.fourth_section
+  padding: 50px 0
+
+.designed_for_people
+  vertical-align: top
+  text-align: center
+  .element
+    top: 0
+    width: 262px
+    height: 280px
+    display: inline-block
+    vertical-align: top
+    margin: 45px 20px
+    p
+      font-size: 14px
+      font-family: "Roboto", sans-serif
+      font-weight: 300
+      color: rgb(109, 109, 109)
+      line-height: 1.2
+      text-align: left
+
+.hobbies
+  text-align: center
+  margin-top: 50px
+.hobby
+  vertical-align: top
+  width: 180px
+  display: inline-block
+  margin: 40px 20px
+  text-align: center
+  p
+    font-size: 14px
+    font-family: "Roboto"
+    font-weight: 500
+    color: rgb(47, 47, 47)
+    line-height: 1.2
+
+
+/* Пятая Секция */
+.fifth_section
+  padding: 30px 0
+  background-color: #f7f8f8
+  text-align: center
+  h3
+    font-size: 25px
+    font-family: "Roboto"
+    font-weight: 300
+    color: rgb(47, 47, 47)
+    line-height: 1.2
+
+/* Шестая секция */
+.sixth_section
+  padding: 50px 0
+
+.consists
+  text-align: center
+  margin-top: 30px
+
+.consists_element
+  width: 45%
+  display: inline-block
+  vertical-align: top
+  margin: 18px 0
+  img
+    display: inline-block
+    width: 20%
+    margin-right: 20px
+
+.consist_description
+  text-align: left
+  width: 70%
+  display: inline-block
+  vertical-align: top
+
+.consist_header
+  font-size: 18px
+  font-family: "Roboto"
+  color: rgb(47, 47, 47)
+
+.consist_add
+  font-size: 14px
+  font-family: "Roboto"
+  color: rgb(109, 109, 109)
+  margin-top: 15px
+
+/* Седьмая секция */
+.seventh_section
+  background-image: url('../img/seventh_section_img.png')
+
+/* certificate */
+.certificate
+  padding: 45px 0 0 0
+  text-align: center
+  h3
+    font-size: 21px
+    font-family: "Roboto", sans-serif
+    font-weight: 300
+    color: rgb(74, 74, 74)
+    margin-top: 20px
+  img
+    width: 60%
+    margin: 20px auto 0 0
+
+/* Восьмая секция */
+.eighth_section
+  padding: 50px 0
+
+.eighth_section_container
+  text-align: center
+  margin: 50px auto
+
+.left_column
+  display: inline-block
+  width: 40%
+  margin: 0 20px
+  vertical-align: top
+
+
+.right_column
+  display: inline-block
+  width: 40%
+  margin: 0 20px
+  vertical-align: top
+
+.eighth_section-element
+  width: 100%
+  display: inline-block
+  margin: 0 0 30px 0
+  vertical-align: top
+.eighth_section-element_header
+  font-size: 16px
+  font-family: "Roboto"
+  font-weight: 500
+  color: rgb(47, 47, 47)
+  line-height: 1.2
+  text-align: left
+  position: relative
+  display: block
+  &:before
+    content: ""
+    position: absolute
+    top: 5px
+    left: -20px
+    line-height: 1.8em
+    padding: 0
+    width: 9px
+    height: 9px
+    border-radius: 50%
+    background-color: #b26e7e
+
+.eighth_section-element_add
+  font-size: 13px
+  font-family: "Roboto", sans-serif
+  font-weight: 300
+  color: rgb(109, 109, 109)
+  line-height: 1.2
+  text-align: left
+  margin: 10px 0 10px 0
+
+
+
+/* Ninth section */
+
+.ninth_section
+  padding: 50px 0
+  background-color: #f7f8f8
+
+.ninth_section_container
+  margin: 35px auto
+
+.ninth_section-item
+  width: 33%
+  display: inline-block
+  img
+    width: 50px
+    margin-right: 15px
+  .consist_add
+    margin-top: 5px
+
+/* STEPS */
+.steps
+  padding: 50px 0
+
+.step
+  width: 125px
+  margin: 0 15px
+  display: inline-block
+  position: relative
+  vertical-align: top
+  &:after
+    content: "\f105"
+    font-family: FontAwesome
+    color: #aa5165
+    font-size: 45px
+    position: absolute
+    top: 20px
+    left: 130px
+
+.steps_container
+  text-align: center
+  margin-top: 35px
+
+.hide-arrow
+  &::after
+    content: ""
+
+
+.step_number
+  margin-top: 10px
+  font-size: 18px
+  font-family: "Roboto"
+  color: rgb(47, 47, 47)
+  font-weight: 500
+
+.step_add
+  margin-top: 7px
+  font-size: 13px
+  font-family: "Roboto"
+  color: rgb(109, 109, 109)
+
+/* Join Block 2 */
+.join_block_2
+  padding: 50px 0
+  background-image: url('../img/joim_block_2_bg.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  h3
+    width: 60%
+    margin: 0
+    font-size: 22px
+    font-family: "Roboto"
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    line-height: 1.2
+    text-align: left
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3)
+    display: inline-block
+    vertical-align: middle
+  .button
+    padding: 15px 35px
+
+
+/* tenth section */
+.tenth_section
+  padding: 50px 0 50px 0
+  position: relative
+  overflow: hidden
+  background-image: url('../img/author_photo.png')
+  background-position: left bottom
+  background-repeat: no-repeat
+  background-color: #f7f8f8
+  img
+    position: absolute
+    bottom: 0
+    z-index: 100
+    left: 0
+  .wrapper
+    float: right
+    width: 50%
+  .left
+    text-align: left
+    &::after
+      left: 0
+      margin: 30px 0 0 0
+
+.author_name
+  margin-top: 25px
+  font-family: "Roboto", sans-serif
+  font-weight: 500
+  font-size: 14px
+  color: #883e4f
+  span
+    font-weight: 400
+.author_info
+  font-size: 14px
+  font-family: "Roboto"
+  color: #6d6d6d
+  line-height: 1.2
+  margin-top: 20px
+  span
+    margin-top: 10px
+    display: block
+
+/* questions section */
+.questions
+  padding: 50px 0
+  background-color: #f7f8f8
+  text-align: center
+
+.questions_wrapp .question:nth-child(odd)
+  margin-right: 50px
+
+.questions_wrapp .question:last-child
+  margin-right: 0
+  width: 86%
+
+
+.questions_wrapp
+  text-align: center
+  margin-top: 30px
+
+
+
+.question
+  width: 40%
+  vertical-align: top
+  display: inline-block
+  text-align: left
+  margin-bottom: 50px
+
+.question_header
+  font-size: 16px
+  font-family: "Roboto", sans-serif
+  font-weight: 500
+  color: rgb(47, 47, 47)
+  position: relative
+  &:before
+    content: "\f128"
+    position: absolute
+    top: 0px
+    left: -30px
+    line-height: 20px
+    text-align: center
+    padding: 0
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #b26e7e
+    font-family: FontAwesome
+    color: #fff
+
+.question_add
+  font-size: 14px
+  font-family: "Roboto"
+  font-weight: 400
+  color: rgb(109, 109, 109)
+  margin-top: 10px
+
+
+/* tenth section */
+.guarantees
+  padding: 50px 0 80px 0
+  position: relative
+  overflow: hidden
+  background-image: url('../img/guarantees_bg.png')
+  background-position: left top
+  background-repeat: no-repeat
+  background-color: #fff
+  .wrapper
+    float: right
+    width: 50%
+  .left
+    text-align: left
+    &::after
+      left: 0
+      margin: 30px 0 0 0
+.guarantees_text
+  margin-top: 30px
+  font-size: 14px
+  font-family: "Roboto", sans-serif
+  color: #6d6d6d
+  line-height: 1.2
+  margin-top: 20px
+  span
+    margin-top: 10px
+    display: block
+
+/* Footer */
+
+footer
+  padding: 30px 0
+  min-width: 980px
+  background-color: #fff
+
+
+footer .container .logo
+  position: relative
+  float: right
+  width: 150px
+  height: auto
+  padding-top: 20px
+  background-repeat: no-repeat
+
+
+footer .footer_info
+  padding-top: 20px
+
+
+footer .footer_info a
+  font-family: "HelveticaR",sans-serif
+  font-size: 13px
+  color: #414141
+  padding: 0 40px 0 0
+  margin: 0
+  text-decoration: none
+
+
+footer .footer_info a:hover
+  color: #d9466c
+
+
+footer .wrap
+  width: 800px
+  float: left
+  height: 100%
+
+
+footer .wrap .copyright
+  padding-top: 25px
+  font-family: "HelveticaR",sans-serif
+  font-size: 12px
+  color: #6f7174
+
+
+/* Results */
+.results
+  padding: 50px 0
+  background-color: #f7f8f8
+  text-align: center
+
+.results_owl
+  margin: 40px 0
+.result_block
+  margin: auto
+  height: 300px
+  background-color: #fff
+  border-radius: 3px
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1)
+  img
+    left: 0
+    float: left
+    display: inline-block !important
+    height: 100%
+
+.result_block_content
+  width: 60%
+  display: inline-block
+  text-align: left
+  vertical-align: middle
+
+/* Testimonials */
+.testimonials
+  padding: 45px 0
+  text-align: center
+
+.testimonial
+  &:focus
+    outline: none
+  .author_name
+    font-size: 18px
+    font-family: "Roboto"
+    font-weight: 500
+    color: rgb(136, 62, 79)
+    span
+      font-weight: 300
+  .author_info
+    font-size: 15px
+    font-family: "Roboto"
+    font-weight: 300
+    color: rgb(109, 109, 109)
+    font-style: italic

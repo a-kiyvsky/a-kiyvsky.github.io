@@ -1,0 +1,229 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .login-btns{
+        text-align: left;
+        margin: 15px 0;
+        padding: 0;
+    }
+    .phone {
+        font-size: 20px;
+    }
+    .delivery-info {
+        font-size: 10px;
+    }
+    .basket a {
+        padding: 5px 10px 5px 10px;
+        margin-left: -7px;
+    }
+    .basket a::before {
+        display: none;
+    }
+    .main_header-mnu {
+        padding: 0;
+    }
+    .main_header-mnu li {
+        margin-left: 0 !important;
+        margin-right: 5px;
+    }
+    .catalog-razdel .product-elements .product-element {
+        height: auto !important;
+    }
+    .product-card .product-element {
+        height: 440px !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .login-btns{
+        text-align: left;
+        margin: 15px 0;
+        padding: 0;
+    }
+    .phone {
+        font-size: 20px;
+    }
+    .delivery-info {
+        font-size: 10px;
+    }
+    .basket a {
+        padding: 5px 10px 5px 10px;
+        margin-left: -7px;
+    }
+    .basket a::before {
+        display: none;
+    }
+    .main_header-mnu {
+        padding: 0;
+    }
+    .main_header-mnu li {
+        margin-left: 0 !important;
+        margin-right: 5px;
+    }
+    .product-card .product-element {
+        height: 400px !important;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .login-btns{
+        text-align: left;
+        margin: 15px 0;
+        padding: 0;
+    }
+    .phone {
+        font-size: 20px;
+    }
+    .delivery-info {
+        font-size: 10px;
+    }
+    .basket a {
+        padding: 5px 10px 5px 10px;
+        margin-left: -7px;
+    }
+    .basket a::before {
+        display: none;
+    }
+    .main_header-mnu {
+        padding: 0;
+    }
+    .main_header-mnu li {
+        margin-left: 0 !important;
+        margin-right: 5px;
+    }
+    .add-second {
+        display: none;
+    }
+    .product-element-img {
+        width: 100%;
+    }
+    .product-element:hover .product-hover-info {
+      width: 100% !important;
+    }
+    .product-element:hover .product-hover-info .min-img {
+      display: none !important;
+    }
+    .rew-text-wrapper {
+        width: 100%;
+    }
+    .rew-img-wrapper {
+        margin-bottom: 25px;
+    }
+    .publication-img-wrapper {
+        height: 240px !important;
+    }
+    .copyright-name, .copyrights-data {
+        text-align: left;
+        margin: 10px 0;
+    }
+    .blog-img img {
+        width: 100%;
+    }
+    .pagination-num {
+        margin-right: 20px;
+    }
+    .catalog-razdel .product-elements .product-element {
+        height: 500px;
+    }
+    .main-sorting-wrapp {
+        padding: 0 !important;
+    }
+    .main-part .col-md-12 {
+        padding: 0;
+    }
+    .blog-img-wrapper {
+        width: auto;
+    }
+    table {
+        width: 100%;
+    }
+    .quote {
+        width: 100%;
+    }
+    .quote::before {
+        top: -70px;
+        left: -10px;
+        font-size: 105px;
+    }
+    .quote::after {
+        bottom: -125px;
+        right: 20px;
+        font-size: 105px;
+    }
+
+    .product-card-image img {
+        width: 100%;
+    }
+    .product-card .product-element {
+        height: 275px !important;
+    }
+    .articule::before,.articule::after {
+        display: none;
+    }
+    .product-card-header h2 {
+        padding-left: 0;
+    }
+    .login-part {
+        height: auto;
+    }
+    .login-part input, .login-part button {
+        margin: 10px 0;
+    }
+    .characteristics-element p {
+        width: 100%;
+    }
+    .sizes-wrapp a {
+        margin: 10px !important;
+    }
+    .sizes-wrapp  {
+        padding: 10px !important;
+    }
+    .pick-color-element {
+        width: 100%;
+    }
+    .owl-carousel {
+        width: 80%;
+        margin: 20px auto !important;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>MIRAGE - Магазин курток</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="libs/powerange/dist/powerange.css" />
+	<script src="libs/powerange/dist/powerange.js"></script>
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+	<section class="main">
+		<div class="topline">
+			<div class="container">
+				<div class="row">
+					<ul class="col-md-6 col-xs-12">
+						<li class="topline-li"><a href="#">Как оформить заказ?</a></li>
+						<li class="topline-li"><a href="#">Оптовикам</a></li>
+						<li class="topline-li"><a href="#">Где купить в розницу?</a></li>
+						<li class="topline-li"><a href="#">О выставке</a></li>
+						<li class="topline-li"><a href="#">Новости</a></li>
+					</ul>
+					<div xol-xs-12="" class="col-md-3 col-md-push-3 col-xs-12">
+						<div class="login-btns col-xs-12">
+							<div class="log"><a href="#">Войти</a></div>
+							<div class="reg"><a href="#">Регистрация</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_header-content">
+			<div class="container">
+				<div class="head-logo col-md-3 col-xs-6">
+					<a href="#"><img src="img/header-logo.png" alt=""></a>
+				</div>
+				<div class="contact-number col-md-2 col-xs-6" style="padding: 0;">
+					<div class="phone">8 495 151 00 01</div>
+					<div class="delivery-info"><img src="img/delivery-info-icon.png" alt="">Доставка по всей России</div>
+				</div>
+				<div class="search-box col-md-6 col-md-push-1 col-xs-12">
+					<input placeholder="Поиск..." class="search-input col-md-7 col-xs-6" type="text">
+					<div class="basket col-xs-6 col-md-5"><a href="#">Корзина пустая</a></div>
+				</div>
+				<div class="main_header-mnu col-md-9 col-xs-12">
+					<ul>
+						<li><a href="#">Мужчинам</a></li>
+						<li><a href="#">Женщинам</a></li>
+						<li><a href="#">Большие размеры М</a></li>
+						<li><a href="#">Большие размеры Ж</a></li>
+						<li><a href="#">Распродажа</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="catalog-razdel">
+		<div class="container">
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Раздел</a></li>
+			</ul>
+			<h2>Раздел каталога</h2>
+			<div class="row">
+				<div class="side-part col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="parameters-wrapp col-md-12">
+									<div class="parameters-box col-md-12">
+										<div class="row">
+											<div class="parameters-header">Вы выбрали</div>
+											<div class="parameters-content">
+												<div class="selected-elements">
+													<div class="selected-element">
+														<div class="selected-text">Весна-лето</div>
+														<button class="selected-close"></button>
+													</div>
+													<div class="selected-element">
+														<div class="selected-text">56</div>
+														<button class="selected-close"></button>
+													</div>
+													<div class="selected-element">
+														<div class="selected-text">Плащевка</div>
+														<button class="selected-close"></button>
+													</div>
+													<div class="selected-element">
+														<div class="selected-text">Синтепон</div>
+														<button class="selected-close"></button>
+													</div>
+													<div class="selected-element">
+														<div class="selected-text">Куртки</div>
+														<button class="selected-close"></button>
+													</div>
+												</div>
+												<a href="#" class="clear">Очистить фильтр</a>
+											</div>
+										</div>
+									</div>
+									<div class="parameters-box col-md-12">
+										<div class="row">
+											<div class="parameters-header">Диапазон цен</div>
+											<div class="parameters-content">
+												<label for="f-price">От</label><input class="inpt"type="text" id="f-price">
+												<label for="l-price">до</label><input class="inpt"type="text" id="l-price">
+												<div class="range-wrapper">
+													<input type="text" id="priceslider" class="priceslider">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="parameters-box col-md-12">
+										<div class="row">
+											<div class="parameters-header">Фильтр</div>
+											<div class="parameters-content filter">
+												<div class="gender">
+													<button class="category-el">Мужские</button>
+													<button class="category-el category-el__active">Женские</button>
+												</div>
+												<div class="categories">
+													<h4>Категории:</h4>
+													<button class="category-el">Ветровки</button>
+													<button class="category-el category-el__active">Плащи</button>
+													<button class="category-el">Тонкий синтепон</button>
+													<button class="category-el">Синтепон</button>
+													<button class="category-el">Пуховик</button>
+												</div>
+												<div class="checkbox">
+													<h4>Сезон:</h4>
+													<input id="check1" type="checkbox" name="check" value="check1">
+													<label for="check1">Весна-лето</label>
+													<input id="check2" type="checkbox" name="check" value="check2">
+													<label for="check2">Осень-зима</label>
+												</div>
+												<div class="radio">
+													<h4>Размер:</h4>
+													<input id="44" type="radio" name="size" value="44">
+													<label for="44">44</label>
+													<input id="45" type="radio" name="size" value="45">
+													<label for="45">45</label>
+													<input id="46" type="radio" name="size" value="46">
+													<label for="46">46</label>
+													<input id="47" type="radio" name="size" value="47">
+													<label for="47">47</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-part col-md-8">
+					<div class="col-md-12">
+						<div class="main-sorting-wrapp">
+							<div class="sorting">
+								<div class="sorting-wrapp">
+									<div class="sorting-text">Сортировать</div>
+									<ul class="sorting-elements">
+										<li class="sorting-element"><a href="#" class="text">Популярности</a></li>
+										<li class="sorting-element"><a href="#" class="text">Цене</a></li>
+										<li class="sorting-element"><a href="#" class="text">Скидке</a></li>
+										<li class="sorting-element"><a href="#" class="text">Обновлению</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<ul class="product-elements clearfix">
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+							<li class="product-element col-md-3 col-xs-6">
+								<div class="product-info">
+									<div class="product-element-img">
+										<img src="img/catalog-razdel-img.png" alt="">
+										<a href="#" class="picture-popup-btn">Быстрый просмотр</a>
+									</div>
+									<div class="product-element-data">
+										<div class="vendor-code">арт. <span>123456AB</span></div>
+										<div class="sign-up-price">
+											<span>Войдите</span>
+											<div class="sign_up_0">чтобы видеть<br>оплтовые цены</div>
+										</div>
+										<a href="#" class="add_to_card-btn"></a>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+						<div class="pagination-wrapp">
+							<div class="pagination">
+								<div class="pages">
+									<ul>
+										<li class="pagination-controlls"><a href="#"><</a></li>
+										<li class="pagination-num current-page"><a href="#">1</a></li>
+										<li class="pagination-num"><a href="#">2</a></li>
+										<li class="pagination-num"><a href="#">3</a></li>
+										<li class="pagination-num"><a href="#">4</a></li>
+										<li class="pagination-num"><a href="#">5</a></li>
+										<li class="pagination-controlls"><a href="#">></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-info">
+							<h3>Heading 2</h3>
+							<p>Цунами имеет тенденцию лимногляциальный сарос. Газопылевое облако последовательно решает непреложный пролювий. Планета, после осторожного анализа, решает экваториальный Каллисто. Ведущий экзогенный геологический процесс - Лисичка решает рифт. Делювий, из которого на 50% состоит руда месторождения, интенсивно меняет ийолит-уртит.
+								<br><br>Элонгация вращает сталагмит. Орбита наблюдаема. Солнечное затмение в связи с преобладанием карьерной разработки ископаемых прекрасно гасит апогей, образуя на границе с Западно-Карельским поднятием своеобразную систему грабенов. Двойное лучепреломление разновозрастно.
+								<br><br>После того как тема сформулирована, уравнение времени оценивает увалистый сталактит. Следует добавить, что и другие генетические типы четвертичных отложений эклиптика доступна. Замерзание потенциально. Восход , в пределах Молого-Шекснинской, Нерльской и Мещерской низменностей, анизотропно изменяет лимнический лавовый поток.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="col-md-2">
+				<h5>Компания</h5>
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Полезные статьи</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-md-push-1">
+				<h5>Выставки</h5>
+				<ul>
+					<li><a href="#">Осень-зима 2015</a></li>
+					<li><a href="#">Осень-зима 2016</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-md-push-2">
+				<h5>Покупателю</h5>
+				<ul>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантии</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-md-push-3">
+				<div class="phone">8 495 151 00 01</div>
+				<a class="email" href="#">info@mirage-opt.ru</a>
+				<div class="social">
+					<div class="social-element vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
+					<div class="social-element fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+					<div class="social-element inst"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+					<div class="social-element tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="bottom-line">
+		<div class="container">
+			<div class="col-md-2 copyright-date">&#169; 2005-2016</div>
+			<div class="col-md-6 copyright-name">Все права защищены и принадлежат ООО "Мир курток</div>
+			<div class="col-md-4 copyrights-data">ИНН 75565896916 / ОГРН 65489165169</div>
+		</div>
+	</section>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="https://use.fontawesome.com/c47f6f4f6d.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/countdown/jquery.plugin.js"></script>
+	<script src="libs/countdown/jquery.countdown.min.js"></script>
+	<script src="libs/countdown/jquery.countdown-ru.js"></script>
+	<script src="libs/landing-nav/navigation.js"></script>
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

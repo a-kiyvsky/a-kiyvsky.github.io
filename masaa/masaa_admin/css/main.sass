@@ -1,0 +1,1730 @@
+*
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+    color: #666
+    opacity: 1
+  &::-webkit-scrollbar
+    width: 12px
+    position: absolute
+    right: -5px
+
+  &::-webkit-scrollbar-track
+    background: #f0f2f3
+
+  &::-webkit-scrollbar-thumb
+    background: #ced5d7
+    border-radius: 25px
+
+  &::-webkit-scrollbar-thumb:window-inactive
+    background: #ced5d7
+
+
+body
+  font-family: "RobotoRegular", sans-serif
+  font-size: 16px
+  background-color: #f1f1f1
+
+.container
+  width: 960px
+
+#wrapper
+  padding-left: 300px
+  transition: all 0.4s ease 0s
+
+#sidebar-wrapper
+  margin-left: -300px
+  left: 300px
+  width: 300px
+  background: #fff
+  position: fixed
+  height: 100%
+  overflow-y: auto
+  z-index: 1000
+  transition: all 0.4s ease 0s
+  overflow-x: hidden
+  overflow-y: scroll
+
+#page-content-wrapper
+  width: 100%
+
+.sidebar-nav
+  position: absolute
+  top: 0
+  width: 300px
+  list-style: none
+  margin: 0
+  padding: 0
+
+
+
+
+
+/* main */
+.sidebar-logo
+  width: 70%
+  text-align: center
+  margin: 30px auto
+  img
+    width: 100%
+
+.sidebar-nav
+  .mnu-element
+    font-family: "Roboto"
+    font-size: 11pt
+    padding: 0 0 0 45px
+    position: relative
+    width: 270px
+    &:hover
+      a
+        color: #5f6163
+  a
+    color: #75858a
+    text-align: left
+    transition: all 0.5s
+    padding: 15px 0
+    display: block
+    &::before
+      content: ""
+      position: absolute
+      display: block
+      left: 15px
+      width: 15px
+      top: 17px
+      height: 15px
+      background-position: center
+      background-size: contain
+      background-repeat: no-repeat
+      transition: all 0.5s
+    .mnu-info
+      display: inline-block
+      border-radius: 3px
+      background-color: rgb(255, 121, 33)
+      width: 27px
+      height: 22px
+      float: right
+      font-size: 13px
+      font-family: "Roboto"
+      color: #fff
+      font-weight: bold
+      text-align: center
+      line-height: 22px
+
+
+  .active
+    a
+      color: #5f6163
+  .active
+    &::after
+      content: ""
+      width: 3px
+      height: 100%
+      background-color: #ff7921
+      left: 0
+      top: 0
+      position: absolute
+  .icon_0
+    &::before
+      background-image: url(../img/sidebar_icon_0.png)
+  .icon_1
+    &::before
+      background-image: url(../img/sidebar_icon_1.png)
+  .icon_2
+    &::before
+      background-image: url(../img/sidebar_icon_2.png)
+  .icon_3
+    &::before
+      background-image: url(../img/sidebar_icon_3.png)
+  .icon_4
+    &::before
+      background-image: url(../img/sidebar_icon_4.png)
+  .icon_5
+    &::before
+      background-image: url(../img/sidebar_icon_5.png)
+  .icon_6
+    &::before
+      background-image: url(../img/sidebar_icon_6.png)
+  .icon_7
+    &::before
+      background-image: url(../img/sidebar_icon_7.png)
+  .icon_8
+    &::before
+      background-image: url(../img/sidebar_icon_8.png)
+  .icon_mnu
+    cursor: pointer
+    &::before
+      background-image: url(../img/sidebar_icon_mnu.png)
+      left: 15px
+      top: 42px
+      width: 20px
+      height: 20px
+      content: ""
+      position: absolute
+      display: none
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+.banner_wrapp
+  padding: 0
+
+.banner
+  margin: 15px 0 25px 0
+  background-color: #fff
+  height: 71px
+  width: 100%
+  display: block
+
+.main-line
+  padding: 0
+  margin-top: 30px
+  margin-bottom: 30px
+
+.page_title
+  font-size: 18px
+  font-family: "Roboto"
+  font-weight: 300
+  text-align: left
+  padding: 0
+  color: rgb(59, 64, 70)
+  margin: 0 !important
+
+.profile
+  margin: 25px 30px
+.settings
+  position: relative
+  width: 45px
+  display: inline-block
+.profile_photo
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  overflow: hidden
+  img
+    width: 100%
+    height: auto
+.settings-btn
+  border-radius: 50%
+  background-color: #fff
+  position: absolute
+  width: 20px
+  height: 20px
+  text-align: center
+  line-height: 20px
+  font-size: 14px
+  color: #a0abae
+  right: -5px
+  bottom: -5px
+
+.profile_name
+  font-size: 12pt
+  font-family: "Roboto"
+  font-weight: 500
+  color: #62787f
+  text-align: left
+  display: inline-block
+  vertical-align: top
+  top: 10px
+  position: relative
+  margin-left: 15px
+
+.log_out
+  color: #7f9094
+  font-size: 18pt
+  display: inline-block
+  vertical-align: top
+  top: 5px
+  position: relative
+  margin-left: 15px
+
+.main-content
+  padding: 0
+
+.main-wrapper
+  border-radius: 2px
+  background-color: #fff
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 1, 0.1)
+  padding: 30px
+
+h3
+  font-size: 18px
+  font-family: "Roboto"
+  font-weight: 400
+  color: #3b4046
+  text-align: left
+
+/* EVENTS */
+
+.event-wrapper
+  vertical-align: top
+  height: 295px
+.filter-wrapper
+  .left-part
+    width: 20%
+    display: inline-block
+  .right-part
+    width: 20%
+    display: inline-block
+  .filter-element
+    label
+      display: inline-block
+      cursor: pointer
+      position: relative
+      padding-left: 23.5px
+      margin-right: 15px
+      margin-top: 10px
+      margin-bottom: 10px
+      display: block
+      text-align: left
+      font-size: 13px
+      font-family: "Roboto"
+      color: rgb(59, 64, 70)
+      line-height: 1.2
+      transition: all 0.5s
+      &::before
+        content: ""
+        display: inline-block
+        margin-right: 10px
+        position: absolute
+        left: 0
+        bottom: -2px
+        border-radius: 50%
+        border-radius: 50%
+        background-color: rgb(242, 242, 242)
+        width: 15px
+        height: 15px
+
+    input
+      &[type=checkbox]
+        display: none
+    .checkbox
+      label
+        margin-bottom: 10px
+        &:before
+          border-radius: 3px
+
+    input
+      &[type=checkbox]:checked + label::before
+        font-family: FontAwesome
+        content: "\f00c"
+        font-size: 10px
+        color: #fff
+        text-align: center
+        line-height: 15px
+  .calegory_0
+    input
+      &[type=checkbox]:checked + label::before
+        background-color: #d95717
+  .calegory_1
+    input
+      &[type=checkbox]:checked + label::before
+        background-color: #008b00
+  .calegory_2
+    input
+      &[type=checkbox]:checked + label::before
+        background-color: #0068b7
+  .calegory_3
+    input
+      &[type=checkbox]:checked + label::before
+        background-color: #ea8c05
+  .checkbox
+    margin: 10px 0
+    text-align: left
+    padding: 15px
+    border-radius: 50%
+    background-color: rgb(242, 242, 242)
+    width: 15px
+    height: 15px
+
+  h4
+    padding: 0
+    margin: 10px 0
+    font-size: 14px
+    font-family: "Arial"
+
+.event-date
+  font-size: 11pt
+  font-family: "Roboto"
+  color: #75858a
+  text-align: left
+  position: relative
+  margin: 25px 0
+  padding-left: 10px
+  span
+    font-weight: bold
+    color: #3b4046
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    width: 100%
+    height: 3px
+    background-color: #f15969
+    margin-left: -10px
+    margin-top: 10px
+
+.event-elenent
+  border-radius: 2px
+  background-color: #fff
+  width: 100%
+  margin: 5px 0
+  font-size: 10pt
+  font-family: "Roboto"
+  font-weight: bold
+  text-align: left
+  padding: 10px 15px
+  vertical-align: middle
+  .time
+    font-weight: 500
+  .author
+    font-weight: 300
+
+.first
+  background-color: #ffc9b0
+  color: rgb(217, 87, 23)
+
+.second
+  background-color: #bae1b2
+  color: #008b00
+
+.third
+  background-color: #a8caef
+  color: #0068b7
+
+/* PAY INSTRUCTION*/
+.pay-instruction
+  .pay-instruction-element
+    border-radius: 3px
+    height: 250px
+    iframe
+      width: 100%
+      height: 75%
+    .pay-instruction_text
+      position: relative
+      display: block
+      font-size: 14px
+      font-weight: 500
+      font-family: "Roboto"
+      color: rgb(59, 64, 70)
+      line-height: 1.2
+      margin: 15px 0 15px 5px
+      img
+        margin-right: 10px
+        height: 20px
+
+.user_setup
+  padding: 0
+  li
+    list-style-type: none
+    vertical-align: top
+    margin: 25px 0
+  .select-wrapper
+    width: 20%
+.st-name
+  display: inline-block
+  font-size: 11pt
+  font-family: "Roboto"
+  color: #75858a
+  text-align: left
+  padding-left: 0
+.st-txt
+  display: inline-block
+  font-size: 11pt
+  font-family: "Roboto"
+  color: #3b4046
+  text-align: left
+
+.st-inp
+  display: none /* Скрываем инпут */
+  input
+    display: inline-block
+    background-color: rgb(247, 247, 247)
+    width: 222px
+    height: 41px
+    border: none
+    padding-left: 25px
+
+.st-change
+  display: inline-block
+  margin-left: 35px
+  font-size: 11pt
+  font-family: "Roboto"
+  color: #75858a
+  text-align: left
+  cursor: pointer
+  .fa
+    margin-right: 10px
+/*photo upload*/
+.inputfile
+  width: 0.1px
+  height: 0.1px
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  z-index: -1
+  + label
+    font-size: 13px
+    font-family: "Roboto"
+    font-weight: 400
+    color: rgb(191, 88, 31)
+    text-decoration: underline
+    display: inline-block
+    cursor: pointer
+  &:focus + label, + label:hover
+    color: #923d0e
+/* selcet */
+select
+  height: 25px
+  line-height: 25px
+  padding-left: 4px
+  font-size: 14.5px
+  font-family: "Roboto"
+  color: #404040
+  margin-top: 16px
+  box-sizing: border-box
+  margin: 7.5px 0
+  position: absolute
+  left: 0
+.select-wrapper
+  position: relative
+  background: #fff url('../img/select_arrow.png') no-repeat right 10px center
+  box-sizing: border-box
+  display: inline-block
+  background-color: rgb(247, 247, 247)
+  height: 25px
+  &:focus
+    background-color: #fff
+
+select
+  margin: 0
+  position: relative
+  border: none
+  cursor: pointer
+  opacity: 0
+  filter: alpha(opacity = 0)
+  width: 100%
+.select-wrapper p
+  width: 100%
+  height: 100%
+  margin: 0
+  padding-left: 15px
+  position: absolute
+  left: 0
+  top: 0
+  color: #404040
+  font-size: 14px
+  line-height: 21px
+  overflow: hidden
+.pass
+  padding-left: 0
+.pass-inp
+  position: relative
+  top: -10px
+  input
+    display: inline-block
+    background-color: rgb(247, 247, 247)
+    width: 222px
+    height: 41px
+    border: none
+    padding-left: 25px
+.sbm_btn
+  padding: 10px 30px
+  background-color: rgb(0, 188, 86)
+  color: #fff
+  border: none
+  text-transform: uppercase
+  font-size: 12pt
+  font-family: "Roboto"
+  font-weight: bold
+  border-radius: 25px
+
+
+.gift
+  margin: 25px 0
+  border-bottom: 1px solid rgb(235, 235, 235)
+  height: 194px
+  margin: 0 0 -1px -1px
+  padding: 15px
+  &:nth-child(odd)
+    border-right: 1px solid rgb(235, 235, 235)
+.gift-image
+  display: inline-block
+  width: 90px
+  height: 90px
+  position: relative
+  .img_wrapp
+    border-radius: 50%
+    overflow: hidden
+    width: 100%
+    height: 100%
+    img
+      height: 100%
+.gift_icon
+  position: absolute
+  right: 0
+  bottom: 0
+  background-color: #ee7664
+  height: 25px
+  width: 25px
+  border: 3px solid #fff
+  border-radius: 50%
+  color: #fff
+  font-size: 12px
+  vertical-align: middle
+  line-height: 20px
+  text-align: center
+
+.gift_desctiption
+  display: inline-block
+  width: 250px
+  margin-left: 20px
+  vertical-align: top
+h4
+  font-size: 10pt
+  font-family: "Roboto"
+  font-weight: 400
+  color: #3b4046
+  line-height: 1.2
+  text-align: left
+  margin: 0
+  padding: 0
+  display: inline-block
+
+.gift_download
+  padding: 5px 20px
+  background-color: #ff7921
+  color: #fff
+  border: none
+  font-size: 12pt
+  font-family: "Roboto"
+  font-weight: bold
+  text-align: center
+  border-radius: 25px
+  position: relative
+  top: 13px
+  display: block
+  width: 75%
+.cont-pay
+  background-color: rgb(0, 188, 86)
+  width: 80%
+
+.deals
+  padding: 0
+
+.deal
+  position: relative
+  margin: 15px 0
+  img
+    width: 100%
+    border-radius: 3px
+
+.text_block
+  position: absolute
+  bottom: 0
+  width: 90%
+  padding: 30px
+
+  h4
+    display: block
+    font-size: 16pt
+    font-family: "Roboto"
+    color: #fff
+    font-weight: bold
+    text-align: left
+    text-shadow: 0.5px 0.866px 5px rgba(0, 0, 1, 0.7)
+
+  .gift_download
+    display: inline-block
+
+.overlay
+  width: 93%
+  height: 100%
+  background-color: rgba(0,0,0,0.5)
+  position: absolute
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+
+.form-input
+  background-color: rgb(247, 247, 247)
+  height: 41px
+  border: 0
+  margin: 15px 0
+
+.form-tarea
+  background-color: rgb(247, 247, 247)
+  height: 140px
+  border: 0
+  width: 100%
+  resize: none
+  padding-top: 10px
+
+.q_form
+  .sbm_btn
+    float: right
+    margin-top: 25px
+  .select-wrapper
+    height: 41px
+    margin: 15px 0
+    background: #f7f7f7 url(../img/select_arrow.png) no-repeat right 10px center
+    p
+      line-height: 41px
+      font-size: 14px
+      font-family: "Roboto"
+      color: rgb(180, 181, 183)
+table
+  width: 100%
+  text-align: center
+  border-collapse: collapse
+  margin-bottom: 20px
+  thead
+    tr
+      td
+        background-color: #f0f2f3
+        padding: 15px 10px
+        text-align: left
+        font-size: 11pt
+        font-family: "Roboto"
+        color: #3b4046
+        font-weight: bold
+
+table
+  tbody
+    td
+      padding: 15px 10px
+      background-color: #fff
+      text-align: left
+      font-size: 11pt
+      font-family: "Roboto"
+      color: #66686b
+      .sbm_btn
+        float: right
+
+    tr:nth-child(2n)
+      td
+        background-color: #fcfcfc
+
+
+table th
+  padding: 8px 5px
+  color: #1f1f1f
+  text-align: left
+  font-weight: normal
+  background: #efefef
+
+.lottery
+  .lottery_state
+    text-align: right
+.balance-content
+  padding: 0 0 40px 0
+  .header
+    margin: 0
+    background-color: #fcfcfc
+  .add-balls
+    background-color: rgb(0, 188, 86)
+    padding: 5px 25px
+    font-size: 14px
+    font-family: "Roboto"
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    line-height: 1.2
+    text-align: center
+    border-radius: 15px
+    margin-top: 27px
+    &:hover
+      background-color: rgb(0, 201, 92)
+
+.current-balance
+  margin: 16px 0px
+  text-align: center
+.currency-balance_transparent
+  .points
+    background-color: transparent
+.points
+  border-radius: 3px
+  background-color: #e9eef4
+  position: relative
+  padding: 10px 60px 10px 20px
+  display: inline-block
+  font-size: 16pt
+  font-family: "Roboto"
+  color: #3b4046
+  font-weight: bold
+  &::after
+    content: ""
+    display: block
+    position: absolute
+    top: 13px
+    right: 18px
+    width: 25px
+    height: 25px
+    background-image: url('../img/points_logo.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+
+.rubles
+  font-size: 18pt
+  font-family: "Roboto"
+  color: #3b4046
+  display: inline-block
+  margin-left: 5px
+
+.points-calc_element
+  text-align: center
+.points-calc_element_special
+  .points
+    padding-right: 20px
+    span
+      margin-left: 30px
+    &::after
+      right: 69px
+
+
+.points-calculation
+  margin: 25px 0 45px 0
+  h3
+    text-align: center
+    font-weight: 400
+
+.points-calc-info
+  font-size: 11pt
+  font-family: "Roboto"
+  color: #3b4046
+  text-align: center
+  width: 80%
+  margin: auto
+
+
+.table_0
+  padding: 0 65px
+
+.table_wrapper
+  height: 209px
+  overflow-y: scroll
+  overflow-x: visible
+  position: relative
+  &::-webkit-scrollbar
+    width: 12px
+    position: absolute
+    right: -5px
+
+  &::-webkit-scrollbar-track
+    background: #f0f2f3
+    border-radius: 25px
+
+  &::-webkit-scrollbar-thumb
+    background: #ced5d7
+    border-radius: 25px
+
+  &::-webkit-scrollbar-thumb:window-inactive
+    background: #ced5d7
+.ticket
+  &:nth-child(odd)
+
+.ticket
+  .history-element_count
+    font-size: 16px
+    font-weight: bold
+    text-align: right
+    position: relative
+    padding-right: 45px
+    &::after
+      content: ""
+      display: inline-block
+      position: absolute
+      top: 13px
+      right: 10px
+      width: 25px
+      height: 25px
+      background-image: url('../img/points_logo.png')
+      background-position: center
+      background-repeat: no-repeat
+      background-size: contain
+
+.ticket-header
+  text-align: center
+  margin: 25px 0
+
+.input-create-ticket
+  border-width: 1px
+  border-color: #b0b0b0
+  border-style: solid
+  background-color: #fff
+  width: 281px
+  padding: 10px 30px
+  border-radius: 25px
+  font-size: 14px
+  font-family: "Roboto"
+  color: #757575
+  height: 44px
+  margin-right: 15px
+
+.button-create-ticket
+  background-color: #ff7921
+  width: 157px
+  height: 44px
+  border-radius: 25px
+  border: none
+  font-size: 15px
+  font-family: "Roboto"
+  color: #fff
+  font-weight: bold
+
+.school-element
+  h5
+    margin-top: 5px
+    font-size: 13px
+    font-family: "Roboto"
+    color: #fff
+    text-shadow: 0px 1px 3px rgba(0, 0, 1, 0.7)
+  .school-info
+    a
+      font-size: 13px
+      font-family: "Roboto"
+      color: #fff
+      text-shadow: 0px 1px 3px rgba(0, 0, 1, 0.7)
+      &::after
+        content: "|"
+        margin: 0 10px
+      &:last-child
+        &::after
+          display: none
+
+.my_purchases
+  padding: 0 0 30px 0
+  td
+    .sbm_btn
+      text-align: right
+  .table_0
+    margin-top: 40px
+  .table_wrapper
+    height: auto
+.my_purchases-info
+  .img-wrapper
+    img
+      width: 100%
+.my_purchases-header
+  border-bottom: 1px solid #ebebeb
+  .select-new
+    float: right
+    top: -10px
+    position: relative
+  ul
+    margin: 0
+    li
+      list-style-type: none
+      display: inline-block
+      margin: 0 15px
+      padding: 25px 0
+      a
+        font-size: 13px
+        font-family: "Roboto"
+        color: #75858a
+      .gift_download
+        color: #fff
+        text-align: center
+        width: 250px
+        float: right
+
+  .active
+    border-bottom: 3px solid #ff7921
+.my_purchases-info
+  margin-top: 25px
+.purchas-info
+  h5
+    font-size: 18px
+    font-family: "Roboto"
+    color: #3b4046
+    text-align: left
+    margin: 10px auto 15px auto
+
+
+.info-block-element
+  padding: 0
+  margin: 10px 0
+
+.info-block-element-header
+  padding: 0
+  text-align: left
+  font-size: 11pt
+  font-family: "Roboto"
+  color: #75858a
+
+.info-block-element-add
+  padding: 0
+  text-align: left
+  font-size: 11pt
+  font-family: "Roboto"
+  color: #3b4046
+  a
+    color: #d84100
+
+.create-ticket
+  text-align: center
+
+.my_purchases-info
+  .gifts
+    padding-left: 50px
+  .img_wrapp
+    border-radius: 0
+    img
+      width: 100%
+      height: auto
+
+
+/* LK_1 */
+.breadcrumbs
+  margin: 20px 0
+  padding-left: 15px
+  .page_title
+    a
+      font-size: 19px
+      font-family: "Roboto"
+      color: rgb(141, 145, 150)
+      &:hover
+        text-decoration: underline
+      &::after
+        content: "/"
+        font-size: 19px
+        font-family: "Roboto"
+        color: rgb(141, 145, 150)
+        margin: 0 15px
+        text-decoration: none
+    .current
+      font-size: 19px
+      font-family: "Roboto"
+      color: rgb(59, 64, 70)
+      line-height: 1.2
+      &::after
+        display: none
+
+.my_purchases-open
+  padding: 0
+  margin: 10px 0
+  .purchas-info
+    h5
+      font-size: 20px
+      font-family: "Roboto"
+      font-weight: 500
+      color: rgb(59, 64, 70)
+      line-height: 1.2
+      margin: 5px 0
+    p
+      font-size: 14px
+      font-family: "Roboto"
+      color: rgb(102, 104, 107)
+      line-height: 1.2
+      margin: 5px 0
+  .info-block
+    margin-top: 15px
+    .info-block-element
+      .info-block-element-header
+        font-size: 13px
+        font-family: "Roboto"
+        font-weight: 500
+        color: rgb(128, 130, 132)
+        line-height: 1.2
+        &::before
+          content: ""
+          background-size: contain
+          background-position: center
+          display: inline-block
+          position: relative
+          margin-right: 10px
+          top: 2px
+      .info-block-element-add
+        font-size: 13px
+        font-family: "Roboto"
+        font-weight: 500
+        color: rgb(59, 64, 70)
+        line-height: 1.2
+    .el_0
+      &::before
+        background-image: url("../img/lk_1_icon_0.png")
+        width: 14px
+        height: 11px
+    .el_1
+      &::before
+        background-image: url("../img/lk_1_icon_1.png")
+        width: 14px
+        height: 13px
+    .el_2
+      &::before
+        background-image: url("../img/lk_1_icon_2.png")
+        width: 14px
+        height: 14px
+    .el_3
+      &::before
+        background-image: url("../img/lk_1_icon_3.png")
+        width: 14px
+        height: 14px
+    .el_4
+      &::before
+        background-image: url("../img/lk_1_icon_4.png")
+        width: 13px
+        height: 13px
+    .el_5
+      &::before
+        background-image: url("../img/lk_1_icon_5.png")
+        width: 14px
+        height: 14px
+  .mk-info
+    margin-top: 25px
+    border-top: 1px solid rgb(235, 235, 235)
+    padding: 15px 0
+    .mk-difficuly
+      padding-left: 35px
+      &::before
+        content: ""
+        background-image: url('../img/mk_difficuly_icon.png')
+        background-position: center
+        background-size: contain
+        width: 26px
+        height: 26px
+        position: relative
+        display: inline-block
+        margin-right: 10px
+      .mk-difficuly_container
+        display: inline-block
+      .mk-difficuly_head
+        font-size: 13px
+        font-family: "Roboto"
+        color: rgb(102, 104, 107)
+        line-height: 1.2
+      .mk-difficuly_add
+        font-size: 14px
+        font-family: "Roboto"
+        color: rgb(59, 64, 70)
+        font-weight: bold
+
+
+
+    .programm-author
+      .author-photo
+        border-radius: 50%
+        width: 26px
+        height: 26px
+        overflow: hidden
+        display: inline-block
+        margin-right: 10px
+        img
+
+      .author-info_wrapper
+        display: inline-block
+        .author-info_head
+          font-size: 13px
+          font-family: "Roboto"
+          color: rgb(102, 104, 107)
+          line-height: 1.2
+        .author-info_add
+          font-size: 14px
+          font-family: "Roboto"
+          color: rgb(59, 64, 70)
+          font-weight: bold
+.lesson-wrapper
+  width: 49%
+  display: inline-block
+  margin-top: 0.75%
+  margin-bottom: 0.75%
+  &:nth-child(even)
+    margin-right: 1.5%
+.lessons
+  margin: 0
+  height: 213px
+  .lesson
+    .lesson-info_main
+      h5
+        font-size: 13px
+        font-family: "Roboto"
+        color: rgb(175, 175, 175)
+        line-height: 1.2
+        margin: 20px 0 5px 0
+      p
+        font-size: 13px
+        font-family: "Roboto"
+        color: rgb(175, 175, 175)
+        margin: 5px 0
+      h6
+        font-size: 18px
+        font-family: "Roboto"
+        color: rgb(154, 154, 154)
+        margin: 5px 0
+    .lesson-info_add
+      .lesson_number
+        border-radius: 50%
+        background-color: rgb(241, 241, 241)
+        width: 80px
+        height: 80px
+        margin-top: 20px
+        line-height: 80px
+        text-align: center
+        font-size: 72px
+        font-family: "Roboto"
+        color: #fff
+        font-weight: bold
+
+
+  .lesson-info
+    margin-top: 25px
+    border-top: 1px solid rgb(235, 235, 235)
+    padding: 10px 15px
+    .lesson-status
+      padding-left: 35px
+      &::before
+        content: ""
+        display: inline-block
+        position: relative
+        width: 27px
+        height: 27px
+      .lesson-status_container
+        display: inline-block
+        margin-left: 15px
+        .lesson-status_header
+          font-size: 13px
+          font-family: "Roboto"
+          color: rgb(102, 104, 107)
+          margin: 0
+        .lesson-status_add
+          font-size: 13px
+          font-family: "Roboto"
+          color: rgb(59, 64, 70)
+          font-weight: bold
+          margin: 0
+    .ls_0
+      &::before
+        background-image: url('../img/ls_0.png')
+    .ls_1
+      &::before
+        background-image: url('../img/ls_1.png')
+    .ls_2
+      &::before
+        background-image: url('../img/ls_2.png')
+.info-block
+  display: none
+.materials-block
+  display: none
+  .materials-block_element
+    box-sizing: border-box
+    display: block
+    position: relative
+    padding: 15px 0
+    .materials-block_info
+      display: inline-block
+      padding-left: 35px
+      position: relative
+      &::before
+        content: ""
+        display: inline-block
+        position: absolute
+        width: 23px
+        height: 27px
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        background-image: url('../img/materials_icon.png')
+      .materials-info_head
+        font-size: 14px
+        font-family: "Roboto"
+        font-weight: 500
+        color: rgb(59, 64, 70)
+        text-align: left
+      .materials-info_add
+        font-size: 13px
+        font-family: "Roboto"
+        color: rgb(102, 104, 107)
+        text-align: left
+.buttons-block
+  .info-block_btn,.materials-block_btn
+    border: 2px solid rgb(188, 202, 207)
+    text-align: center
+    padding: 5px 15px
+    width: 146px
+    height: 29px
+    display: inline-block
+    margin: 25px 10px 0 10px
+    cursor: pointer
+    font-size: 14px
+    font-family: "Roboto"
+    color: rgb(146, 168, 175)
+    font-weight: bold
+    line-height: 1.2
+    border-radius: 15px
+    transition: all 0.5s
+    &:hover
+      border-color: rgb(138, 164, 173)
+
+  .btn_nonactive
+    &::after
+      content: "\f107"
+      font-family: FontAwesome
+      margin-left: 5px
+  .btn_active
+    &::after
+      content: "\f106"
+      font-family: FontAwesome
+      margin-left: 5px
+
+.progress-line_wrapper
+  .progress-line_header
+    font-size: 14px
+    font-family: "Roboto"
+    color: rgb(59, 64, 70)
+    font-weight: bold
+    line-height: 1.2
+    text-align: left
+    position: relative
+    span
+      font-size: 13px
+      font-family: "Roboto"
+      color: rgb(102, 104, 107)
+      font-weight: 400
+      line-height: 1.2
+      text-align: right
+      position: absolute
+      right: 35px
+  .progress-line_element
+    width: 90%
+    background-color: rgb(238, 238, 238)
+    height: 10px
+    position: relative
+    border-radius: 8px
+    overflow: hidden
+    margin: 7px 0
+    .progress-line_current
+      background-color: rgb(255, 98, 0)
+      height: 100%
+      left: 0
+      position: absolute
+
+.lesson_opened
+  width: 100%
+  .lessons
+    height: auto
+  .lesson-info_main
+    h5
+      font-size: 18px !important
+      font-family: "Roboto" !important
+      color: rgb(59, 64, 70) !important
+      line-height: 1.2 !important
+    p
+      font-size: 14px !important
+      font-family: "Roboto" !important
+      color: rgb(102, 104, 107) !important
+
+  .lesson-info_add
+    .lesson_number
+      right: 0
+      position: absolute
+  .p-line_wrapper
+    width: 100%
+    margin: 25px 0
+    .progress-line_wrapper
+      .progress-line_element
+        width: 100%
+      .progress-line_header
+        .percent
+          right: 0
+
+.lesson-task
+  margin: 15px 0
+  .lesson-task_open
+    padding-top: 0
+    iframe
+      width: 100%
+      height: 450px
+      margin: 25px 0
+    .lesson-task_description
+      font-size: 14px
+      font-family: "Roboto"
+      color: rgb(102, 104, 107)
+      line-height: 1.2
+      text-align: left
+      border-bottom: 1px solid rgb(235, 235, 235)
+      padding-bottom: 15px
+    .lesson-task_feedback
+      .task-feedback_contact
+        .task-slider
+          font-size: 15px
+          font-family: "Roboto"
+          color: rgb(102, 104, 107)
+          line-height: 1.2
+          text-align: left
+          margin: 25px 0
+          .toggle-bg
+            display: inline-block
+            margin-right: 15px
+            position: relative
+            background-color: rgb(210, 210, 210)
+            width: 45px
+            height: 24px
+            border-radius: 15px
+            float: left
+            .switch
+              background: #ccc
+              display: block
+              float: left
+              width: 23px
+              height: 22px
+              left: -1px
+              position: relative
+              top: 1px
+              z-index: 1
+              border-radius: 50%
+              background-color: rgb(255, 255, 255)
+            input
+              height: 23px
+              left: 0
+              margin: 0
+              opacity: 0
+              padding: 0
+              position: absolute
+              top: -10px
+              width: 22px
+              z-index: 2
+            input:checked.switch
+              left: 2px
+            input:checked~.switch
+              left: 20px
+            input:checked
+              z-index: 0
+    .lesson-task_header
+      margin: 0 -30px
+      padding: 20px 30px
+      border-bottom: 1px solid rgb(235, 235, 235)
+      .lesson-task_number
+        margin: 0
+        font-size: 13px
+        font-family: "Roboto"
+        color: rgb(102, 104, 107)
+        line-height: 1.2
+        text-align: left
+      .lesson-task_name
+        font-size: 18px
+        font-family: "Roboto"
+        font-weight: 500
+        color: rgb(59, 64, 70)
+        line-height: 1.2
+        text-align: left
+
+.task-form
+  .task-form_header
+    border: 1px solid rgb(238, 238, 238)
+    border-radius: 4px 4px 0 0
+    p
+      font-size: 13px
+      font-family: "Roboto"
+      font-weight: 500
+      color: rgb(102, 104, 107)
+      line-height: 1.2
+      margin-left: 25px
+      display: inline-block
+      margin-right: 15px
+    .form-icon
+      width: 15px
+      height: 15px
+      display: inline-block
+      margin: 0 5px
+      top: 3px
+      position: relative
+      cursor: pointer
+    .b
+      font-size: 13px
+      font-family: "Roboto"
+      font-weight: 800
+    .i
+      font-family: "Roboto"
+      font-weight: bold
+      font-style: italic
+  .input_form
+    width: 100%
+    height: 65px
+    font-size: 14px
+    font-family: "Roboto"
+    color: rgb(180, 181, 183)
+    line-height: 1.2
+    text-align: left
+    top: 0
+    border: 1px solid
+    border-color: rgb(238, 238, 238)
+    border-radius: 0 0 4px 4px
+    top: 0
+    padding-left: 25px
+  .question
+    float: right
+    border: none
+    background-color: #fff
+    border-radius: 15px
+    margin: 25px 10px
+    border: 2px solid rgb(188, 202, 207)
+    height: 31px
+    line-height: 26px
+    font-size: 14px
+    font-family: "Roboto"
+    color: rgb(173, 189, 194)
+    text-align: center
+    width: 192px
+    &:hover
+      border-color: rgb(138, 164, 173)
+      color: rgb(138, 164, 173)
+  .btn
+    float: right
+    background-color: rgb(255, 98, 0)
+    width: 192px
+    height: 31px
+    font-size: 14px
+    font-family: "Roboto"
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    line-height: 1.2
+    text-align: center
+    border: none
+    border-radius: 15px
+    margin: 25px 0 20px 10px
+    &:hover
+      background-color: rgb(255, 116, 29)
+  .pick_file
+    margin: 25px 0
+    label
+      font-size: 14px
+      font-family: "Roboto"
+      font-weight: 500
+      color: rgb(147, 147, 147)
+      line-height: 1.2
+      text-decoration: none
+      padding-left: 55px
+      position: relative
+      &::before
+        content: ""
+        background-image: url("../img/file-atach.png")
+        height: 33px
+        width: 33px
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        display: inline-block
+        left: 0
+
+/*lottery*/
+input
+  &[type=checkbox]
+    display: none
+
+.checkbox
+  display: inline-block
+  top: 50%
+  position: relative
+  transform: translateY(-80%)
+  margin-left: 35px
+  label
+    display: inline-block
+    cursor: pointer
+    position: relative
+    margin-right: 15px
+    margin-top: 10px
+    margin-bottom: 10px
+    font-size: 14px
+    font-family: "Roboto"
+    color: rgb(59, 64, 70)
+    font-weight: 500
+    line-height: 1.2
+    text-align: center
+    transition: all 0.5s
+    &::before
+      content: ""
+      display: block
+      width: 24px
+      height: 24px
+      margin-right: 10px
+      left: 50%
+      transform: translateX(-50%)
+      position: relative
+      bottom: 1px
+      background-color: rgb(242, 242, 242)
+      border-radius: 50%
+      margin-bottom: 5px
+      transition: all 0.5s
+      color: #fff
+      line-height: 24px
+
+.lottery-btn
+  float: right
+  background-color: rgb(255, 98, 0)
+  padding: 5px 25px
+  font-size: 14px
+  font-family: "Roboto"
+  color: rgb(255, 255, 255)
+  font-weight: bold
+  border: none
+  border-radius: 15px
+  margin-bottom: 25px
+  span
+    background-color: #fff
+    color: rgb(255, 98, 0)
+    border-radius: 50%
+    height: 25px
+    width: 25px
+    position: relative
+    display: inline-block
+    margin-left: 15px
+    line-height: 25px
+  &:hover
+    background-color: #ff741d
+    span
+      color: #ff741d
+.showmore-btn
+  background-color: rgb(236, 241, 244)
+  padding: 5px 25px
+  border-radius: 15px
+  font-size: 14px
+  font-family: "Roboto"
+  color: rgb(59, 64, 70)
+  font-weight: bold
+  line-height: 1.2
+  text-align: center
+  border: none
+  margin: 25px auto
+  display: block
+  position: relative
+  &:hover
+    background-color: rgb(223, 232, 237)
+
+
+input
+  &[type=checkbox]:checked + label::before
+    content: "\f00c"
+    font-family: FontAwesome
+    font-size: 15px
+    color: #fff
+    background-color: #ff6200
+    text-align: center
+.l-ticket_wrapper
+  margin: 15px 0
+.l-ticket_body
+  border-radius: 3px
+  width: 706px
+  background-image: url('../img/ticket-body_0.png')
+  background-position: left center
+  background-size: cover
+  display: inline-block
+  padding: 15px
+  .l-ticket_info
+    display: inline-block
+    width: 49%
+    vertical-align: top
+    .l-ticket_tirage
+      font-size: 13px
+      font-family: "Roboto"
+      color: rgb(59, 64, 70)
+      line-height: 1.2
+      text-align: left
+      margin-bottom: 15px
+    .l-ticket_name
+      font-size: 18px
+      font-family: "Roboto"
+      font-weight: 500
+      color: rgb(59, 64, 70)
+      line-height: 1.2
+      text-align: left
+      margin-bottom: 5px
+    .l-ticket_date
+      font-size: 13px
+      font-family: "Roboto"
+      color: rgb(102, 104, 107)
+      line-height: 1.2
+      text-align: left
+    .l-ticket_bnumber
+      margin-top: 75px
+      font-size: 13px
+      font-family: "Roboto"
+      color: rgb(102, 104, 107)
+      line-height: 1.2
+      text-align: left
+
+  .l-ticket_numbers
+    display: inline-block
+    width: 50%
+    .n-top,.n-bottom
+      margin: 0 0 10px 0
+    .n-bottom
+      margin-bottom: 0
+    .number-element
+      font-size: 18px
+      font-family: "Roboto"
+      color: rgb(102, 104, 107)
+      font-weight: bold
+      line-height: 1.2
+      text-align: center
+      border-width: 2px
+      border-color: rgb(195, 218, 230)
+      border-style: solid
+      border-radius: 4px
+      background-color: rgb(255, 255, 255)
+      width: 48px
+      height: 32px
+      line-height: 28px
+      display: inline-block
+      margin: 5px 0px
+
+
+/* Tickets */
+.tickets-opened
+  .ticket-header
+    font-size: 18px
+    font-family: "Roboto"
+    color: rgb(59, 64, 70)
+    line-height: 1.2
+    text-align: left
+  .contact-block
+    .messages-wrapper
+      .messages_element
+        margin: 20px 0
+        .message_name
+          display: inline-block
+          font-size: 15px
+          font-family: "Roboto"
+          color: rgb(59, 64, 70)
+          font-weight: bold
+          line-height: 1.2
+          text-align: left
+        .message_date
+          display: inline-block
+          font-size: 13px
+          font-family: "Roboto"
+          color: rgb(153, 153, 153)
+          line-height: 1.2
+          text-align: left
+          margin-left: 25px
+        .message_text
+          font-size: 14px
+          font-family: "Roboto"
+          color: rgb(59, 64, 70)
+          line-height: 1.2
+          text-align: left
+          margin: 5px 0
+      .masaa-reply
+        .message_name
+          color: rgb(214, 85, 22)
+    form
+      textarea
+        resize: none
+        background-color: rgb(247, 247, 247)
+        position: relative
+        border: none
+        width: 100%
+        height: 81px
+        padding: 10px
+        box-sizing: border-box
+      input
+        float: right
+        margin: 15px 0
+        background-color: rgb(0, 188, 86)
+        width: 145px
+        height: 35px
+        border-radius: 15px
+        font-size: 14px
+        font-family: "Roboto"
+        color: rgb(255, 255, 255)
+        font-weight: bold
+        line-height: 1.2
+        text-align: center
+        border: none
+        text-transform: uppercase
+/* End tickets */

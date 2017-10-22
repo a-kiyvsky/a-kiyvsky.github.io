@@ -1,0 +1,322 @@
+body
+  top: 0
+  left: 0
+  margin: 0
+  padding: 0
+
+.container
+  width: 960px
+  margin: auto
+  padding: 0
+
+@font-face
+  font-family: HelveticaB
+  src: url(../fonts/HelveticaNeueCyr-Bold.otf)
+
+@font-face
+  font-family: HelveticaM
+  src: url(../fonts/HelveticaNeueCyr-Medium.otf)
+
+@font-face
+  font-family: HelveticaR
+  src: url(../fonts/HelveticaNeueCyr-Roman.otf)
+
+h1
+  font-family: "HelveticaB", sans-serif
+  font-size: 33px
+  color: #fff
+  line-height: 1.091
+  text-align: center
+  text-shadow: 0px 2px 2.85px rgba(0, 0, 0, 0.6)
+  margin: 90px 0 0 0
+
+p
+  font-family: "HelveticaB", sans-serif
+  font-size: 20px
+  color: #fff
+  line-height: 1.05
+  text-align: center
+  text-shadow: 0px 2px 0.95px rgba(0, 0, 0, 0.6)
+  margin: 10px 0 0 0
+
+
+
+
+/* HEADER */
+
+header
+  height: 690px
+  width: 100%
+  background-image: url('../img/header_bg.jpg')
+  background-position: top -220px center
+  background-size: cover
+
+.logo
+  width: 125px
+  height: auto
+  padding-top: 20px
+  left: 0
+
+form
+  margin: 50px 0 0 0
+  text-align: center
+
+.header-form_name
+  border-radius: 20px
+  background-color: #fff
+  width: 274px
+  height: 41px
+  border: none
+  text-align: center
+  font-size: 14px
+  font-family: "HelveticaM", sans-serif
+  color: #384752
+  line-height: 1.286
+  margin: 0 13px 0 13px
+  &:focus
+    outline: none
+
+.header-form_submit
+  border-radius: 20px
+  background-color: #46af72
+  width: 274px
+  height: 41px
+  border: none
+  text-align: center
+  font-size: 14px
+  font-family: "HelveticaB", sans-serif
+  color: #fff
+  text-transform: uppercase
+  margin: 0 13px 0 13px
+  transition: all 0.5s
+  &:focus
+    outline: none
+  &:hover
+    background-color: #57d88d
+    cursor: pointer
+
+.timer
+  margin-top: 70px
+
+.timer_blocks
+  text-align: center
+  margin-top: 15px
+
+.timer_block
+  display: inline-block
+  width: 75px
+  height: 75px
+  margin: 0 7px 0 7px
+  border: 8px solid #fff
+  background-color: rgba(255, 255, 255, 0.851)
+
+.time_text
+  font-size: 48px
+  font-family: "HelveticaB", sans-serif
+  color: #2d3f4c
+  transform: matrix( 0.85,0,0,0.85,0,0)
+
+.time_description
+  font-size: 13px
+  font-family: "HelveticaB"
+  color: #2d3f4c
+  margin-top: -5px
+  transform: matrix( 0.85,0,0,0.85,0,0,0)
+
+
+/* Result */
+.result
+  padding: 85px 0 85px 0
+  .container
+    height: 305px
+
+.video
+  float: left
+
+.results
+  float: right
+  width: 450px
+
+h2
+  font-size: 30px
+  font-family: "HelveticaB", sans-serif
+  color: #1c2329
+  line-height: 1.2
+  text-align: left
+  margin: 0
+  &::after
+    content: ""
+    width: 110px
+    height: 7px
+    background-color: #84b599
+    position: relative
+    display: block
+    margin-top: 20px
+
+.circle
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background-color: rgb(87, 127, 151)
+  position: relative
+  display: inline-block
+  vertical-align: top
+  top: 5px
+  margin-right: 7px
+
+.bullet_text
+  display: inline-block
+  width: 90%
+  margin: 0
+  padding: 0
+  font-size: 14px
+  font-family: "HelveticaR"
+  color: rgb(77, 77, 77)
+  line-height: 1.2
+  text-align: left
+
+.bullet
+  margin: 15px 0 15px 0
+
+.bullets
+  margin-top: 40px
+
+/* About Author */
+
+.about
+  padding: 85px 0
+
+.author_photo
+  width: 280px
+  height: 280px
+  overflow: hidden
+  border-radius: 100%
+  display: inline-block
+  margin-right: 50px
+  img
+    width: 100%
+
+.author_info
+  display: inline-block
+  width: 600px
+  vertical-align: top
+
+.author_name
+  margin-top: 25px
+  font-size: 16px
+  color: #39464e
+  font-family: "HelveticaM", sans-serif
+
+.author_spec
+  margin-top: 5px
+  font-size: 14px
+  font-family: "HelveticaR", sans-serif
+  color: #39464e
+
+.author_text
+  margin-top: 25px
+  font-family: "HelveticaR", sans-serif
+  font-size: 14px
+  color: #4d4d4d
+
+
+/* pre-footer */
+.promo
+  height: 465px
+  background-image: url('../img/promo_bg.png')
+  background-size: cover
+  background-position: top
+  background-repeat: no-repeat
+
+h3
+  font-size: 20px
+  font-family: "HelveticaB"
+  color: #1c2329
+  text-align: center
+  span
+    color: #309159
+
+
+.promo_form
+  width: 333px
+  height: 265px
+  background-color: #fff
+  float: left
+  border: 5px #46af72 solid
+  margin: 100px 0 0 0
+  .header-form_name
+    display: block
+    border: 2px rgb(134, 145, 153) solid
+    margin: 20px auto
+
+  .header-form_submit
+    display: block
+    margin: 0 auto
+  p
+    font-size: 13px
+    font-family: "HelveticaR"
+    color: rgb(93, 121, 142)
+    line-height: 1.385
+    text-shadow: none
+    margin-top: 20px
+
+.promo_content
+  width: 550px
+  float: right
+  h1
+    margin-top: 120px
+    text-align: left
+  .timer
+    margin-top: 20px
+    p
+      text-align: left
+
+    .timer_block
+      float: left
+
+
+/* Footer */
+
+footer
+  height: 105px
+  width: 100%
+  background-color: #fff
+
+
+footer .container .logo
+  position: relative
+  float: right
+  width: 150px
+  height: auto
+  padding-top: 20px
+  background-repeat: no-repeat
+
+
+footer .footer_info
+  padding-top: 20px
+
+
+footer .footer_info a
+  font-family: "HelveticaR",sans-serif
+  font-size: 13px
+  color: #414141
+  padding: 0 40px 0 0
+  margin: 0
+  text-decoration: none
+
+
+footer .footer_info a:hover
+  color: #46af72
+
+
+footer .wrap
+  width: 800px
+  float: left
+  height: 100%
+
+
+footer .wrap .copyright
+  padding-top: 25px
+  font-family: "HelveticaR",sans-serif
+  font-size: 12px
+  color: #6f7174

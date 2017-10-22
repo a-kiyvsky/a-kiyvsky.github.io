@@ -1,0 +1,80 @@
+@media only screen and (max-width:1200px){
+.main{min-height: 0;padding-bottom: 40px;height: auto;}
+.main nav{display:none;background-color:white;border-radius:5px;padding:15px;margin:21px 0px;position:absolute;right:0;left:50%;transform:translateX(-50%);z-index:999;}
+.main nav ul{margin:0;position:relative;}
+.main nav ul::after{content:"";position:absolute;top:-32px;right:-4px;width:0;height:0;border-style:solid;transition:all 0.5s;border-width:0 10px 12px 10px;border-color:transparent transparent #ffffff transparent;}
+.main nav ul li{display:block;text-align:center;margin:5px auto;}
+.main nav ul li a{color:#364f6b;font-size:21px;}
+
+.main h1{margin:50px 0 0 0;font-size:19px;}
+.main p{margin:15px auto 30px auto;font-size:17px;}
+.second{padding-bottom: 30px;top:-45px;}
+.second .col-md-4{margin-bottom:35px;}
+.second h2{margin-top:55px;}
+.second .second-promo{margin-top:50px;}
+.programm #owlcarousel{margin-top:20px;}
+.programm .item .programm-card{width:93%;height:500px;}
+.programm .item .programm-image{top:25px;left:54%;width:291px;}
+.more-info{min-height:495px;}
+.more-info .video-wrapper{height:182px;}
+.more-info .video-wrapper iframe{height:100%;}
+.more-info .video-wrapper::before{height:255px;width:619px;}
+.coast{min-height: none; height: auto;}
+.coast h2{margin-bottom:15px;}
+.coast form .field{margin:7px auto;}
+.coast form .button{width:262px;border-radius:5px;margin:5px auto;}
+.needed{padding-bottom:111px;}
+.needed .needed-wrapper .count{margin-top:105px;}
+.needed .needed-wrapper .count::before{top:47%;left:45%;}
+.needed .needed-wrapper .c_second::before{transform:translate(-50%, -50%) rotate(45deg);left:51%;top:33%;}
+.needed .needed-wrapper .c_third::before{left:50%;top:50%;}
+.steps{height:auto;top:0;}
+.steps h2{margin-bottom:0px;margin-top:0;}
+.steps .steps-element .count{width:90px;height:90px;line-height:90px;font-size:44px;margin:0 auto 25px auto;}
+.steps .steps-element .description .steps-header{text-align:center;}
+.steps .steps-element .description .steps-descr{text-align:center;}
+.about-teacher .photo-element_wrapper{margin-bottom:35px;}
+.about-teacher .photo-element_wrapper img{width:75%;margin:0 auto;position:relative;display:block;}
+.about-teacher .about-teacher_row .info-element{margin-top:0px;}
+.author-work{height:auto;padding-bottom:50px;}
+.why-not::after{top:185px;right:-90px;display: none}
+.why-not .wrapper p{width:auto;}
+.why-not{background-image: none}
+.guaranties h4{margin:40px auto 10px auto;display: inline-block;}
+.last h4{margin:40px auto 100px auto;}
+.coast_full{height:1190px;}
+.coast_full .right-part{transform:translateY(0%);}
+.coast_full .left-part .box {text-align: center}
+.coast_full .left-part .box img{width:440px;left:-125px;position:relative;}
+.coast_full .left-part .box .coast_promo{left:10px;}
+.author-work .owlcarousel_work .owl-nav {top: 39%;position: absolute;width: 66%;margin: 0 auto;left: 50%;transform: translate(-50%,-40%);}
+.student-work .owlcarousel_stud-work .owl-nav {top: 50%;position: absolute;width: 66%;margin: 0 auto;left: 50%;transform: translate(-50%,-40%);}
+.author-work .owlcarousel_work .owl-nav .owl-next, .author-work .owlcarousel_work .owl-nav .owl-prev {     background-color: #fff;
+    border-radius: 5px;
+    padding: 0;
+    height: 49px;
+    line-height: 49px;
+    font-size: 48px;
+    padding: 0 10px;}
+}
+
+.student-work .owlcarousel_stud-work .owl-nav {
+    width: 80%;
+}
+
+.author-work .owlcarousel_work .owl-nav {
+    width: 77%;
+    top: 46%;
+}
+
+.student-work .owlcarousel_stud-work .owl-nav .owl-next, .student-work .owlcarousel_stud-work .owl-nav .owl-prev{     background-color: #fff;
+    border-radius: 5px;
+    padding: 0;
+    height: 49px;
+    line-height: 49px;
+    font-size: 48px;
+    padding: 0 10px;}
+}
+@media only screen and (max-width:892px){
+
+}

@@ -1,0 +1,139 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .form_header-info{
+    font-size: 18pt;
+  }
+
+  .campaing_setup-wrapper li:nth-child(n) {
+    background-color: #f7f7f7;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  .campaing_setup-wrapper li:nth-child(1):nth-child(3):nth-child(5):nth-child(8) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .red_dot::after {
+    display: none;
+  }
+  .campaing_conducting-element {
+    height: auto !important;
+  }
+  .campaing_conducting-image {
+    background-position: center;
+    height: 214px;
+    margin-top: 25px;
+  }
+
+  .section_head {
+    line-height: 1;
+  }
+
+  .work_result {
+    margin-top: 23px;
+    padding: 30px 15px;
+  }
+
+  .work_result::before {
+    left: 13px;
+    top: -13px;
+    border-width: 0 12.5px 13px 12.5px;
+    border-color: transparent transparent #f2f5f6 transparent;
+  }
+
+  .work_result_add_text {
+    margin: 15px 0;
+  }
+  .work_result_add_text::after {
+    display: none;
+  }
+  .work_result_add .submit_button {
+    width: 100%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .main_section{
+    background-position: -797px;
+  }
+  .main_text{
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 16pt;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 10pt;
+  }
+  .header_form {
+    margin-top: 25px;
+    padding: 45px 15px;
+  }
+  .steps .section_head {
+    margin: -5px
+  }
+  .campaing_setup-wrapper li:nth-child(even) {
+    background-color: #f7f7f7;
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  .campaing_setup-wrapper li:nth-child(odd) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .contact_us .form .input_field {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .contact_us .form .submit_button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .author_text_info {
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
