@@ -82,6 +82,7 @@ section {
   background-image: url('../img/main-screen_bg.png');
   padding-bottom: 105px;
   position: relative;
+  background-size: cover;
 }
 
 .main-slider #sync1 {
@@ -431,6 +432,12 @@ section {
   background-color: #ffffff;
   min-width: 16.3%;
   margin: auto;
+  transition: all 0.5s;
+}
+
+.bullet-bottom:hover {
+  background-color: #ffe600
+
 }
 .bullet-bottom img {
   height: 53px;
@@ -503,6 +510,11 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   margin-top: 30px;
+  transition: all 0.5s;
+}
+
+.about-section .left-part a.btn:hover {
+  box-shadow: 0 7px 17px #e4b900
 }
 
 .about-section .right-part {
@@ -517,6 +529,7 @@ section {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 50%;
 }
 
 .about-section .right-part .promo  h2 {
@@ -540,6 +553,7 @@ section {
   font-size: 16px;
   line-height: 16px;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 0 0px 0 30px;
   max-width: 470px;
 }
@@ -547,7 +561,7 @@ section {
 .about-section .right-part .docs  {
   border: 1px solid rgba(0,0,0,0.15);
   padding: 40px 30px;
-  min-width: 475px;
+  width: 50%;
 }
 
 .about-section .right-part .docs  h2 {
@@ -613,7 +627,7 @@ section {
 
 .contact-us {
   padding: 30px;
-  background-image: url('../img/main-screen_bg.png');
+  background-image: url('../img/bg_2.png');
   background-position: center;
   background-size: cover;
 }
@@ -649,7 +663,6 @@ section {
 .contact-us a.btn {
   width: 205px;
   height: 47px;
-  box-shadow: 0 7px 17px #e4b900;
   border-radius: 52px;
   background-color: #ffe600;
   color: #000;
@@ -663,12 +676,17 @@ section {
   display: inline-block;
   margin:  auto;
   margin-top: 40px;
+  transition: all 0.5s;
+}
+
+.contact-us a.btn:hover {
+  box-shadow: 0 7px 17px #e4b900;
 }
 
 .photo-slider {
   width: 100%;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 50px 0 195px 0
 }
 
 .photo-slider h2 {
@@ -788,6 +806,7 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  font-size: 0;
 }
 
 .photo-slider .owl-prev {
@@ -803,6 +822,8 @@ section {
   width: 100%;
   text-align: center;
   margin: 25px 0;
+  position: absolute;
+  bottom: -130px;
 }
 
 .photo-slider .owl-dot {
@@ -890,6 +911,7 @@ section {
 .capabilities-element:hover a.more-btn {
   background-color: #fff;
 }
+
 
 .capabilities-element h3 {
   width: 360px;
@@ -1049,6 +1071,12 @@ section {
   border: none;
   text-transform: uppercase;
   margin-top: 20px;
+  transition: all 0.5s;
+  margin-bottom: 25px;
+}
+
+.select-lend .form-group .btn:hover {
+  box-shadow: 0 7px 17px #e4b900;
 }
 
 .slider-block {
@@ -1132,6 +1160,8 @@ section {
   transition: all 0.5s;
   position: relative;
   color: transparent;
+  font-size: 0;
+  vertical-align: top;
 }
 
 .news-slider .owl-prev::after,.news-slider .owl-next::after {
@@ -1225,9 +1255,13 @@ section {
   background-repeat: no-repeat;
 }
 
+.news-slider .item .more-btn:hover {
+  box-shadow: 0 7px 17px #e4b900;
+}
+
 .reviews {
   padding: 30px 25px;
-  background-image: url('../img/main-screen_bg.png');
+  background-image: url('../img/bg_2.png');
   background-position: center;
   background-size: cover;
 }
@@ -1328,10 +1362,13 @@ section {
   padding: 40px 25px;
   border: 1px solid rgba(228,228,228,.28);
   border-width: 1px;
+  position: relative;
   color: #fff;
-
 }
 
+.reviews-slider .owl-item.active:nth-child(-n+1)  .item {
+  border-right: 0;
+}
 .reviews-slider .item .header {
   display: flex;
   flex-direction: row;
@@ -1882,6 +1919,12 @@ section {
   background-repeat: no-repeat;
   margin: 0 2.5px;
 }
+
+@media screen and (min-width: 2300px) {
+  .photo-slider .owl-dots {
+    bottom: -225px;
+  }
+}
 @media only screen and (max-width: 1300px)  {
   .about-section {
     flex-direction: column;
@@ -2035,6 +2078,7 @@ section {
   .photo-slider .owl-next, .photo-slider .owl-prev {
     width: 50px;
     height: 50px;
+    font-size: 0;
   }
 
   .select-lend .filter {
