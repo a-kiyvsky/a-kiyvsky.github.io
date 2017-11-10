@@ -248,7 +248,7 @@ section {
 .main-slider a.btn {
   width: 205px;
   height: 47px;
-  box-shadow: 0 7px 17px #e4b900;
+  transition: all 0.5s;
   border-radius: 52px;
   background-color: #ffe600;
   display: inline-block;
@@ -260,7 +260,9 @@ section {
   text-decoration: none;
   margin: 45px 0;
 }
-
+.main-slider a.btn:hover {
+  box-shadow: 0 7px 17px #e4b900;
+}
 .main-slider .info {
   position: absolute;
   top: 0;
@@ -1846,7 +1848,7 @@ section {
 .footer-left .item a.more-btn {
   width: 205px;
   height: 47px;
-  box-shadow: 0 7px 17px #e4b900;
+  transition: all 0.5s;
   border-radius: 52px;
   background-color: #ffe600;
   color: #000000;
@@ -1858,6 +1860,10 @@ section {
   display: inline-block;
   margin-top: 80px;
   margin-bottom: 20px;
+}
+
+.footer-left .item a.more-btn:hover {
+  box-shadow: 0 7px 17px #e4b900;
 }
 .footer-left .owl-nav [class*='owl-'] {
   transition: all .3s ease;
