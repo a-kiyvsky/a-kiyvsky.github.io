@@ -1174,8 +1174,9 @@ section {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  background-image: url('../img/more-link_icon.png');
+  background-image: url('../img/more-link_icon.svg');
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -1860,6 +1861,7 @@ section {
   display: inline-block;
   margin-top: 80px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .footer-left .item a.more-btn:hover {
