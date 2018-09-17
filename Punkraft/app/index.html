@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Punkraft - Ukrainian Beer</title>
+    <meta name="description"
+          content="Бар, де ти можеш спробувати виключно крафтове пиво. Бар, де презентуються кращі українські пивовари. Бар, де добірний крафт. Punkraft.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<div class="preloader">
+
+</div>
+<div class="fullscreen-bg faded">
+    <div class="overlay"></div>
+    <video autoplay muted loop class="fullscreen-bg__video">
+        <source src="img/background.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="lines">
+    <div class="lines__element"></div>
+    <div class="lines__element"></div>
+    <div class="lines__element"></div>
+    <div class="lines__element"></div>
+    <div class="lines__element"></div>
+</div>
+
+<div class="container">
+    <header class="header">
+        <a href="#" class="header__logo"><img src="img/logo.svg" alt=""></a>
+        <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="header__links">
+            <ul class="header__menu">
+                <li class="header__link"><a href="#">меню</a></li>
+                <li class="header__link"><a href="#">галерея</a></li>
+                <li class="header__link"><a href="events.html">івенти</a></li>
+                <li class="header__link"><a href="#">контакти</a></li>
+            </ul>
+            <ul class="header__language">
+                <li class="active"><a href="#">укр</a></li>
+                <li><a href="#">рус</a></li>
+                <li><a href="#">eng</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <h1>Бар крафтового<br> українського<br> та мпортного пива </h1>
+        <a href="#" class="button">забронювати стіл</a>
+    </section>
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="footer__address"><a href="#">київ, ігорівська 14а</a></div>
+            <div class="footer__info">
+                <p>с 12:00 до 4:00</p>
+                <div class="footer__info__line"></div>
+                <a href="tel:+380504240024">+380 (50) 424 00 24</a>
+            </div>
+        </div>
+        <div class="footer__right">
+            <div class="footer__links">
+                <ul>
+                    <li><a href="#">tripadvisor</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="js/scripts.min.js"></script>
+<script>
+    setTimeout(function (e) {
+        $('.preloader').addClass('loaded');
+        $('.content').addClass('visible');
+        $('footer').addClass('visible');
+    }, 1000);
+        $('.header__hamburger').click(function(){
+            $(this).toggleClass('open');
+        });
+</script>
+</body>
+</html>

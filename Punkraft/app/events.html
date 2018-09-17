@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Punkraft - Ukrainian Beer</title>
+    <meta name="description"
+          content="Бар, де ти можеш спробувати виключно крафтове пиво. Бар, де презентуються кращі українські пивовари. Бар, де добірний крафт. Punkraft.">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="libs/owl/assets/owl.carousel.css">
+    <link rel="stylesheet" href="libs/owl/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+<div class="preloader">
+
+</div>
+
+<div class="container standart">
+    <header class="header">
+        <a href="/" class="header__logo"><img src="img/logo.svg" alt=""></a>
+        <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="header__links">
+            <ul class="header__menu">
+                <li class="header__link"><a href="#">меню</a></li>
+                <li class="header__link"><a href="#">галерея</a></li>
+                <li class="header__link"><a href="#">івенти</a></li>
+                <li class="header__link"><a href="#">контакти</a></li>
+            </ul>
+            <ul class="header__language">
+                <li class="active"><a href="#">укр</a></li>
+                <li><a href="#">рус</a></li>
+                <li><a href="#">eng</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="events">
+            <h2>івенти</h2>
+            <div class="events__tabs">
+                <div class="events__tab active"><a href="#">усі</a></div>
+                <div class="events__tab"><a href="#">найближчі</a></div>
+                <div class="events__tab"><a href="#">минулі</a></div>
+            </div>
+            <div class="events__cards">
+                <div class="events__carousel owl-theme owl-carousel">
+                    <div class="item">
+                        <a href="#" class="events__card">
+                            <div class="events__card__image">
+                                <img src="img/preview.jpg" alt="">
+                            </div>
+                            <p class="events__card__date">12 липня, о 19:00</p>
+                            <p class="events__card__title">Презентація Clurichaun від Дідька</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="events__card">
+                            <div class="events__card__image">
+                                <img src="img/preview.jpg" alt="">
+                            </div>
+                            <p class="events__card__date">12 липня, о 19:00</p>
+                            <p class="events__card__title">Презентація Clurichaun від Дідька</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="events__card">
+                            <div class="events__card__image">
+                                <img src="img/preview.jpg" alt="">
+                            </div>
+                            <p class="events__card__date">12 липня, о 19:00</p>
+                            <p class="events__card__title">Презентація Clurichaun від Дідька</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="events__card">
+                            <div class="events__card__image">
+                                <img src="img/preview.jpg" alt="">
+                            </div>
+                            <p class="events__card__date">12 липня, о 19:00</p>
+                            <p class="events__card__title">Презентація Clurichaun від Дідька</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="events__card">
+                            <div class="events__card__image">
+                                <img src="img/preview.jpg" alt="">
+                            </div>
+                            <p class="events__card__date">12 липня, о 19:00</p>
+                            <p class="events__card__title">Презентація Clurichaun від Дідька</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="events__card">
+                            <div class="events__card__image">
+                                <img src="img/preview.jpg" alt="">
+                            </div>
+                            <p class="events__card__date">12 липня, о 19:00</p>
+                            <p class="events__card__title">Презентація Clurichaun від Дідька</p>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/scripts.min.js"></script>
+<script>
+    setTimeout(function (e) {
+        $('.preloader').addClass('loaded');
+        $('.content').addClass('visible');
+        $('footer').addClass('visible');
+    }, 1000);
+        $('.header__hamburger').click(function(){
+            $(this).toggleClass('open');
+        });
+</script>
+</body>
+</html>
