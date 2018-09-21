@@ -46,9 +46,18 @@
     <div class="lines__element"></div>
 </div>
 
-<div class="container">
+
+<div class="attention">
+    <h2>Тобі є 18?</h2>
+    <div class="attention__controlls">
+        <a href="#" class="attention__controll attention__controll--false">Нi</a>
+        <a href="#" class="attention__controll attention__controll--true">Так</a>
+    </div>
+</div>
+
+<div class="container container__main">
     <header class="header">
-        <a href="#" class="header__logo"><img src="img/logo.svg" alt=""></a>
+        <a href="/" class="header__logo header__logo--active"><img class="svg" src="img/logo.svg" alt=""></a>
         <div class="header__hamburger">
             <span></span>
             <span></span>
@@ -57,10 +66,10 @@
         </div>
         <nav class="header__links">
             <ul class="header__menu">
-                <li class="header__link"><a href="#">меню</a></li>
-                <li class="header__link"><a href="#">галерея</a></li>
-                <li class="header__link"><a href="events.html">івенти</a></li>
-                <li class="header__link"><a href="#">контакти</a></li>
+                <li class="header__link"><a href="/menu.html">меню</a></li>
+                <li class="header__link"><a href="/gallery.html">галерея</a></li>
+                <li class="header__link"><a href="/events.html">івенти</a></li>
+                <li class="header__link"><a href="/contacts.html">контакти</a></li>
             </ul>
             <ul class="header__language">
                 <li class="active"><a href="#">укр</a></li>
@@ -96,11 +105,17 @@
 
 <script src="js/scripts.min.js"></script>
 <script>
-    setTimeout(function (e) {
-        $('.preloader').addClass('loaded');
-        $('.content').addClass('visible');
-        $('footer').addClass('visible');
-    }, 1000);
+        $('.attention__controll--true').click(function (e) {
+            e.preventDefault();
+            $('.preloader').addClass('loaded');
+            setTimeout(function () {
+                $('.content').addClass('visible');
+                $('footer').addClass('visible');
+            }, 800);
+            setTimeout(function () {
+                $('.attention').addClass('hidden');
+            }, 300)
+        });
         $('.header__hamburger').click(function(){
             $(this).toggleClass('open');
         });

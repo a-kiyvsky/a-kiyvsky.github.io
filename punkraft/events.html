@@ -56,7 +56,7 @@
             </ul>
         </nav>
     </header>
-    <div class="content">
+    <div class="content visible">
         <div class="events">
             <h2>івенти</h2>
             <div class="events__tabs">
@@ -130,11 +130,6 @@
 
 <script src="js/scripts.min.js"></script>
 <script>
-    setTimeout(function (e) {
-        $('.preloader').addClass('loaded');
-        $('.content').addClass('visible');
-        $('footer').addClass('visible');
-    }, 1000);
         $('.header__hamburger').click(function(){
             $(this).toggleClass('open');
         });
