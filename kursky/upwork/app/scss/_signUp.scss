@@ -153,12 +153,17 @@
                     color: $accent;
                 }
                 &::after {
-                    content: '\f00c';
-                    font-family: "FontAwesome";
+                    content: '';
+                    width: 26px;
+                    height: 26px;
+                    background-image: url('../img/checkmark.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 55%;
                     color: #fff;
                     position: absolute;
                     opacity: 0;
-                    left: 5px;
+                    left: 0px;
                     top: -10px;
                     transition: all 0.2s;
                 }
