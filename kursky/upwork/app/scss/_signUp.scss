@@ -1,0 +1,285 @@
+.signUp {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include media-breakpoint-down(lg) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__right {
+        position: relative;
+        height: 100vh;
+        min-height: 768px;
+        width: 100%;
+        background: $accent;
+        @include media-breakpoint-down(lg) {
+            height: auto;
+            min-height: auto;
+            padding: 50px 15px;
+        }
+        .text__wrapper {
+            position: absolute;
+            right: -140px;
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            @include media-breakpoint-down(lg) {
+                position: relative;
+                top: 0;
+                transform: none;
+                right: 0;
+            }
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 25px; 
+                    @include media-breakpoint-down(lg) {
+                        justify-content: flex-start;
+                    }
+                    li {
+                        margin: 0 15px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        @include media-breakpoint-down(lg) {
+                            margin: 0 5px;
+                        }
+                    }
+                    a {
+                        font-weight: 900;
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .image__wrapper {
+            opacity: 0.58;
+            background-blend-mode: darken;
+            background: $accent;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: 385px;
+            background-position: bottom center;
+            background-image: url(../img/signUp__background.png);
+            @include media-breakpoint-down(lg) {
+                position: absolute;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-position: bottom right;
+                background-size: 20%;
+            }
+        }
+    }
+    &__left {
+        width: 580px;
+        height: 100vh;
+        min-height: 768px;
+        padding: 110px 115px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include media-breakpoint-down(lg) {
+            padding: 50px 15px;
+            min-height: auto;
+            height: auto;
+            width: 100%;
+        }
+    }
+    &__header {
+        font-weight: 900;
+        font-size: 34px;
+        margin: 0 0 40px 0;
+        text-align: left;
+        width: 350px;
+    }
+}
+
+.form {
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
+    &__group {
+        position: relative;
+        margin-bottom: 40px;
+        &--submit {
+            input {
+                max-width: 350px;
+                width: 100%;
+                height: 60px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px 0 rgba(0, 214, 221, 0.5);
+                background-color: $accent;
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 900;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    box-shadow: 0 10px 90px 0 rgba(0, 214, 221, 0.5)
+                }
+            }
+        }
+        &--check {
+            label {
+                position: relative !important;
+                cursor: pointer !important;
+                padding: 0 !important;
+                color: #1a1a1a !important;
+                font-size: 16px !important;
+                top: 0 !important;
+                display: flex;
+                user-select: none;
+                pointer-events: all !important;
+                &:hover {
+                    &::before {
+                        box-shadow: 0 10px 30px 0 rgba(0, 214, 221, 0.5);
+                    }
+                }
+                a {
+                    color: $accent;
+                }
+                &::after {
+                    content: '\f00c';
+                    font-family: "FontAwesome";
+                    color: #fff;
+                    position: absolute;
+                    opacity: 0;
+                    left: 5px;
+                    top: -10px;
+                    transition: all 0.2s;
+                }
+                &::before {
+                    content: '';
+                    margin-right: 20px;
+                    vertical-align: text-top;
+                    width: 26px;
+                    height: 26px;
+                    background: #f7f7f7;
+                    border: solid 1px #e8e8e8;
+                    border-radius: 7px;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        &--checkbox {
+            position: absolute;
+            opacity: 0;
+            &:checked {
+                + label::before {
+                    background: #01e4ec;
+                    border-color: #01e4ec;
+                }
+                + label::after {
+                    top: 0;
+                    opacity: 1;
+                  }
+            }
+        }
+        &__input {
+            box-sizing: border-box;
+            font-size:18px;
+            padding:10px 10px 10px 0px;
+            display:block;
+            max-width:350px;
+            width: 100%;
+            border:none;
+            border-bottom: 1px solid #e8e8e8;
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #000000;
+            outline: none;
+            &.error {
+                ~ label {
+                    top: -20px;
+                    font-size: 14px;
+                    color: #bdbdbd;
+                }
+            }
+            &::-webkit-input-placeholder {
+                font-size: 10px;
+                color: #bdbdbd;
+            }
+            &:valid {
+                ~ label {
+                    top: -20px;
+                    font-size: 14px;
+                    color: #bdbdbd;
+                }
+            }
+            &:focus {
+                outline: none;
+                ~ label {
+                    top: -20px;
+                    font-size: 14px;
+                    color: $accent;
+                }
+                ~ .form__group__bar::before {
+                    width: 100%;
+                }
+                ~ .form__group__highlight {
+                    animation: inputHighlighter 0.3s ease;
+                }
+            }
+        }
+        &__highlight {
+            position:absolute;
+            height:100%; 
+            max-width:350px;
+            width: 100%; 
+            top: 50%;
+            transform: translateY(-50%); 
+            left: 0;
+            pointer-events:none;
+            opacity:0.1;
+        }
+        &__bar {
+            position:relative;
+            display:block;
+            max-width:350px;
+            width: 100%;
+            &::before {
+                content:'';
+                height:1px; 
+                width:0;
+                bottom:0px; 
+                position:absolute;
+                background:$accent; 
+                transition:0.2s ease all; 
+                left: 0%;
+            }
+        }
+        label {
+            color:#bdbdbd; 
+            font-size:18px;
+            position:absolute;
+            pointer-events:none;
+            left: 0px;
+            top:10px;
+            transition:0.2s ease all;
+        }
+    }
+}
+
+@keyframes inputHighlighter {
+	from { background:#bdbdbd; }
+  to 	{ width:0; background:transparent; }
+}
