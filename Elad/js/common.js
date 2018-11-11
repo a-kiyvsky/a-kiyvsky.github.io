@@ -3,7 +3,6 @@ $(function() {
 		var contain = $(this);
 		setTimeout(function() {
 			contain.addClass('active');
-			console.log($(this));
 		}, 750 * index);
 	})
 	$('.owl-carousel').owlCarousel({
