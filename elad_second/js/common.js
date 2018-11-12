@@ -16,20 +16,20 @@ $(function() {
 		}
 	})
 
-	var wave1 = $('#wawe1').wavify({
-		height: 380,
-		bones: 4,
-		amplitude: 60,
-		color: '#fff',
-		speed: .15
-	});
-
-  var wave2 = $('#wawe2').wavify({
-		height: 380,
-		bones: 3,
-		amplitude: 40,
-		color: '#fce98b',
-		speed: .25
-  });
+	// var wave1 = $('#wawe1').wavify({
+	// 	height: 380,
+	// 	bones: 4,
+	// 	amplitude: 60,
+	// 	color: '#fff',
+	// 	speed: .15
+	// });
+	//
+  // var wave2 = $('#wawe2').wavify({
+	// 	height: 380,
+	// 	bones: 3,
+	// 	amplitude: 40,
+	// 	color: '#fce98b',
+	// 	speed: .25
+  // });
 
 });
